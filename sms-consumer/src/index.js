@@ -1,3 +1,3 @@
-const startConsumer = require("./consumer/rabbitmqConsumer");
+const startConsumer = require("./consumer/ConsumerMessages.js");
 
 startConsumer();

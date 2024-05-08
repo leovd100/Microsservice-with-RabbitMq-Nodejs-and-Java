@@ -1,5 +1,5 @@
 const amqp = require("amqplib");
-const messageService = require("../services/MessageSender.js");
+const messageService = require("../services/MessageSenderService.js");
 require("dotenv").config({ path: "./config/.env" });
 
 async function startConsumer() {
