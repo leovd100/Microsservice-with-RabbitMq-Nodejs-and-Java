@@ -1,6 +1,6 @@
 const amqp = require("amqplib");
 require("dotenv").config({ path: "./config/.env" });
-
+const emailService = require("../services/EmailService.js");
 async function startConsumer() {
   try {
     const connection = await amqp.connect(
@@ -16,6 +16,7 @@ async function startConsumer() {
     channel.consume(queueName, (msg) => {
       if (msg !== null) {
         console.log("Mensagem recebida:", msg.content.toString());
+        emailService.send(msg.content.toString());
         channel.ack(msg);
       }
     });
