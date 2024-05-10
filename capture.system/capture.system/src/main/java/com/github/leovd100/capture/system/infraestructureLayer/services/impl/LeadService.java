@@ -6,8 +6,11 @@ import com.github.leovd100.capture.system.infraestructureLayer.services.SmsCommu
 import com.github.leovd100.capture.system.domainLayer.entities.Lead;
 import com.github.leovd100.capture.system.infraestructureLayer.services.LeadComunicationService;
 import com.github.leovd100.capture.system.infraestructureLayer.repositories.LeadRepository;
+import feign.FeignException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.net.ConnectException;
 
 @Service
 public class LeadService implements LeadComunicationService {
@@ -25,9 +28,10 @@ public class LeadService implements LeadComunicationService {
     @Override
     public LeadResponseDto saveLead(LeadDto leadDto) {
 
-            Lead lead = repository.save(new Lead(leadDto));
-            communicationService.sendMessage(lead);
-            return toLeadResponseDto(lead);
+        Lead lead = repository.save(new Lead(leadDto));
+        communicationService.sendMessage(lead);
+        return toLeadResponseDto(lead);
+
 
     }
 

@@ -1,6 +1,7 @@
 package com.github.leovd100.capture.system.applicationLayer.exception.controllerAdvicer;
 
 import com.github.leovd100.capture.system.domainLayer.model.StandardError;
+import feign.FeignException;
 import jakarta.persistence.PersistenceException;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
@@ -21,6 +22,19 @@ public class ControllerExceptionHandler {
         err.setTimestamp(Instant.now());
         err.setStatus(status.value());
         err.setError("database error");
+        err.setMessage(e.getMessage());
+        err.setPath(request.getRequestURI());
+        return ResponseEntity.status(status).body(err);
+
+    }
+
+    @ExceptionHandler(FeignException.class)
+    public ResponseEntity<StandardError> feingException(FeignException e, HttpServletRequest request) {
+        HttpStatus status = HttpStatus.BAD_REQUEST;
+        StandardError err = new StandardError();
+        err.setTimestamp(Instant.now());
+        err.setStatus(status.value());
+        err.setError("Request Error.");
         err.setMessage(e.getMessage());
         err.setPath(request.getRequestURI());
         return ResponseEntity.status(status).body(err);
