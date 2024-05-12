@@ -1,6 +1,6 @@
 package com.github.leovd100.message.service.infraestructureLayer.service.impl;
 
-import com.github.leovd100.message.service.domainLayer.model.Lead;
+import com.github.leovd100.message.service.domainLayer.entities.Lead;
 import com.github.leovd100.message.service.infraestructureLayer.repositories.LeadRepository;
 import com.github.leovd100.message.service.infraestructureLayer.service.LeadService;
 import org.apache.logging.log4j.LogManager;

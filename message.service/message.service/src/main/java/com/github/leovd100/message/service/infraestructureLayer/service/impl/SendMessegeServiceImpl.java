@@ -5,7 +5,7 @@ import com.github.leovd100.message.service.infraestructureLayer.service.LeadServ
 import com.github.leovd100.message.service.infraestructureLayer.service.SendMessageService;
 import com.github.leovd100.message.service.domainLayer.dto.LeadDto;
 import com.github.leovd100.message.service.domainLayer.enums.TypeMessage;
-import com.github.leovd100.message.service.domainLayer.model.Lead;
+import com.github.leovd100.message.service.domainLayer.entities.Lead;
 import com.github.leovd100.message.service.domainLayer.model.Message;
 import com.github.leovd100.message.service.infraestructureLayer.producer.ProducerEmail;
 import com.github.leovd100.message.service.infraestructureLayer.producer.ProducerSms;
@@ -29,12 +29,10 @@ public class SendMessegeServiceImpl implements SendMessageService {
     }
 
     public void sendMessages(LeadDto leadDto) throws RuntimeException{
-
             Lead entity = modelMapper.toLead(leadDto);
             entity = leadService.save(entity);
             producerSms.send(generateMessageWithType(TypeMessage.SMS, entity));
             producerEmail.send(generateMessageWithType(TypeMessage.EMAIL, entity));
-
     }
 
     private Message  generateMessageWithType(TypeMessage typeMessage, Lead lead){

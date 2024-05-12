@@ -1,5 +1,6 @@
 package com.github.leovd100.message.service.domainLayer.model;
 
+import com.github.leovd100.message.service.domainLayer.entities.Lead;
 import com.github.leovd100.message.service.domainLayer.enums.TypeMessage;
 import lombok.AllArgsConstructor;
 import lombok.Data;

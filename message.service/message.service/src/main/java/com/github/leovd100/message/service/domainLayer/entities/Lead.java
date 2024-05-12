@@ -1,4 +1,4 @@
-package com.github.leovd100.message.service.domainLayer.model;
+package com.github.leovd100.message.service.domainLayer.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -20,6 +20,7 @@ public class Lead {
 
     private String name;
 
+    @Column(unique = true)
     private String email;
 
     private String phone;

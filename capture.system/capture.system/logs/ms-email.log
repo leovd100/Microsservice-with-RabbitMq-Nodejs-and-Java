@@ -189,3 +189,94 @@
 2024-05-12T17:01:38,234 ERROR com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - Request error. Unable to communicate with the messaging service.[500] during [POST] to [http://localhost:8083/send-message] [SmsCommunicationService#sendMessage(Lead)]: [Internal Error Server]
 2024-05-12T17:04:15,366 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
 2024-05-12T17:04:15,391 ERROR com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - Request error. Unable to communicate with the messaging service.[500] during [POST] to [http://localhost:8083/send-message] [SmsCommunicationService#sendMessage(Lead)]: [Internal Error Server]
+2024-05-12T22:57:08,863 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-12T22:57:08,947 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Starting MarketingCaptureSystemApplication using Java 17.0.2 with PID 5276 (C:\marketing Capture\capture.system\capture.system\target\classes started by Leonardo Vieira in C:\marketing Capture\capture.system\capture.system)
+2024-05-12T22:57:08,954 DEBUG com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T22:57:08,956 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T22:57:11,717 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-05-12T22:57:11,731 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-05-12T22:57:11,735 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T22:57:11,736 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T22:57:11,916 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T22:57:11,919 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2830 ms
+2024-05-12T22:57:14,455 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-05-12T22:57:14,518 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2024-05-12T22:57:14,536 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Started MarketingCaptureSystemApplication in 7.236 seconds (process running for 9.195)
+2024-05-12T22:57:31,352 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12T22:57:31,352 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-12T22:57:31,355 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-12T22:57:40,444 INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 432 ms
+2024-05-12T22:58:14,840 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-12T22:58:15,356 ERROR com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - Request error. Unable to communicate with the messaging service.[500] during [POST] to [http://localhost:8083/send-message] [SmsCommunicationService#sendMessage(Lead)]: [{"timestamp":"2024-05-12T22:58:15.310+00:00","status":500,"error":"Internal Server Error","path":"/send-message"}]
+2024-05-12T23:00:40,607 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-12T23:00:41,138 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Nome successfully registered!
+2024-05-12T23:25:32,372 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-12T23:25:32,434 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Starting MarketingCaptureSystemApplication using Java 17.0.2 with PID 676 (C:\marketing Capture\capture.system\capture.system\target\classes started by Leonardo Vieira in C:\marketing Capture\capture.system\capture.system)
+2024-05-12T23:25:32,445 DEBUG com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T23:25:32,447 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T23:25:34,642 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-05-12T23:25:34,656 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-05-12T23:25:34,660 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T23:25:34,660 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T23:25:34,828 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T23:25:34,831 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2256 ms
+2024-05-12T23:25:36,989 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-05-12T23:25:37,066 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2024-05-12T23:25:37,087 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Started MarketingCaptureSystemApplication in 5.81 seconds (process running for 7.271)
+2024-05-12T23:27:31,593 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12T23:27:31,593 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-12T23:27:31,595 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-12T23:27:31,852 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-12T23:27:32,535 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Nome successfully registered!
+2024-05-12T23:27:41,764 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-12T23:27:41,778 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Nome successfully registered!
+2024-05-12T23:27:52,870 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-12T23:27:52,890 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Nome successfully registered!
+2024-05-12T23:28:54,698 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-12T23:28:54,738 ERROR com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - Request error. Unable to communicate with the messaging service.Connection refused: no further information executing POST http://localhost:8083/send-message
+2024-05-12T23:29:02,550 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-12T23:29:03,276 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Nome successfully registered!
+2024-05-12T23:29:11,417 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-12T23:29:11,507 ERROR com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - Request error. Unable to communicate with the messaging service.[500] during [POST] to [http://localhost:8083/send-message] [SmsCommunicationService#sendMessage(Lead)]: [{"timestamp":"2024-05-12T23:29:11.479+00:00","status":500,"error":"Internal Server Error","path":"/send-message"}]
+2024-05-12T23:34:10,871 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-12T23:34:11,319 ERROR com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - Request error. Unable to communicate with the messaging service.[500] during [POST] to [http://localhost:8083/send-message] [SmsCommunicationService#sendMessage(Lead)]: [{"timestamp":"2024-05-12T23:34:11.275+00:00","status":500,"error":"Internal Server Error","path":"/send-message"}]
+2024-05-12T23:38:04,052 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-12T23:38:04,114 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Starting MarketingCaptureSystemApplication using Java 17.0.2 with PID 12360 (C:\marketing Capture\capture.system\capture.system\target\classes started by Leonardo Vieira in C:\marketing Capture\capture.system\capture.system)
+2024-05-12T23:38:04,123 DEBUG com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T23:38:04,126 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T23:38:07,624 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-05-12T23:38:07,642 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-05-12T23:38:07,649 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T23:38:07,650 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T23:38:07,914 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T23:38:07,917 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3678 ms
+2024-05-12T23:38:10,640 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-05-12T23:38:10,692 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2024-05-12T23:38:10,714 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Started MarketingCaptureSystemApplication in 7.709 seconds (process running for 9.03)
+2024-05-12T23:39:04,576 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12T23:39:04,576 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-12T23:39:04,577 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-12T23:39:04,845 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-12T23:39:05,404 ERROR com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - [B@75c8aeba
+2024-05-12T23:39:05,405 ERROR com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - Request error. Unable to communicate with the messaging service.[409] during [POST] to [http://localhost:8083/send-message] [SmsCommunicationService#sendMessage(Lead)]: [could not execute statement [ERROR: duplicate key value violates unique constraint "tb_lead_email_key"
+  Detalhe: Key (email)=(email@youremail.com) already exists.] [insert into tb_lead (email,name,phone,id) values (?,?,?,?)]; SQL [insert into tb_lead (email,name,phone,id) values (?,?,?,?)]; constraint [tb_lead_email_key]]
+2024-05-12T23:40:28,196 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-12T23:40:28,272 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Starting MarketingCaptureSystemApplication using Java 17.0.2 with PID 16308 (C:\marketing Capture\capture.system\capture.system\target\classes started by Leonardo Vieira in C:\marketing Capture\capture.system\capture.system)
+2024-05-12T23:40:28,283 DEBUG com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T23:40:28,285 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T23:40:31,109 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-05-12T23:40:31,123 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-05-12T23:40:31,127 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T23:40:31,128 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T23:40:31,318 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T23:40:31,323 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2879 ms
+2024-05-12T23:40:33,649 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-05-12T23:40:33,698 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2024-05-12T23:40:33,711 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Started MarketingCaptureSystemApplication in 6.799 seconds (process running for 8.071)
+2024-05-12T23:40:43,721 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12T23:40:43,721 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-12T23:40:43,722 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-12T23:40:43,977 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-12T23:40:44,066 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - true
+2024-05-12T23:40:44,067 ERROR com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - Request error. Unable to communicate with the messaging service.[409] during [POST] to [http://localhost:8083/send-message] [SmsCommunicationService#sendMessage(Lead)]: [could not execute statement [ERROR: duplicate key value violates unique constraint "tb_lead_email_key"
+  Detalhe: Key (email)=(email@youremail.com) already exists.] [insert into tb_lead (email,name,phone,id) values (?,?,?,?)]; SQL [insert into tb_lead (email,name,phone,id) values (?,?,?,?)]; constraint [tb_lead_email_key]]

@@ -5,6 +5,7 @@ import com.github.leovd100.capture.system.domainLayer.dto.builder.LeadResponseDt
 import com.github.leovd100.capture.system.domainLayer.dto.builder.LeadResponseDtoBuilder;
 import com.github.leovd100.capture.system.domainLayer.entities.Lead;
 import com.github.leovd100.capture.system.infraestructureLayer.exceptions.RequestException;
+import com.github.leovd100.capture.system.infraestructureLayer.exceptions.UserExistsException;
 import com.github.leovd100.capture.system.infraestructureLayer.services.LeadComunicationService;
 import com.github.leovd100.capture.system.applicationLayer.resources.out.feing.SmsCommunicationService;
 import feign.FeignException;
@@ -31,11 +32,9 @@ public class LeadService implements LeadComunicationService {
             logger.info("User %s successfully registered!".formatted(lead.getName()));
             return leadtoLeadResponseDto(lead);
         }catch (FeignException exception){
-//            if(exception.status() == 500){
-//                throw new
-//            }
-
-
+            if(exception.status() == 409){
+                throw new UserExistsException("User email already exists in database");
+            }
             logger.error("Request error. Unable to communicate with the messaging service." + exception.getMessage());
             throw new RequestException("Request error. Unable to communicate with the messaging service.");
         }
