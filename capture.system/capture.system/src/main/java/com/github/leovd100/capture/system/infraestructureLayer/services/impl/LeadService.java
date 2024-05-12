@@ -31,7 +31,12 @@ public class LeadService implements LeadComunicationService {
             logger.info("User %s successfully registered!".formatted(lead.getName()));
             return leadtoLeadResponseDto(lead);
         }catch (FeignException exception){
-            logger.error("Request error. Unable to communicate with the messaging service.");
+//            if(exception.status() == 500){
+//                throw new
+//            }
+
+
+            logger.error("Request error. Unable to communicate with the messaging service." + exception.getMessage());
             throw new RequestException("Request error. Unable to communicate with the messaging service.");
         }
     }

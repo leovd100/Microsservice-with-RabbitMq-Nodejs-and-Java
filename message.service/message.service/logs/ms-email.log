@@ -1,0 +1,515 @@
+2024-05-12T15:59:21,474 INFO  com.github.leovd100.message.service.Application - Starting Application using Java 21.0.1 with PID 19940 (C:\marketing Capture\message.service\message.service\target\classes started by Leonardo Vieira in C:\marketing Capture\message.service\message.service)
+2024-05-12T15:59:21,489 DEBUG com.github.leovd100.message.service.Application - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T15:59:21,491 INFO  com.github.leovd100.message.service.Application - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T15:59:23,146 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12T15:59:23,248 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interface.
+2024-05-12T15:59:24,419 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2024-05-12T15:59:24,441 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-05-12T15:59:24,446 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T15:59:24,447 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T15:59:24,652 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T15:59:24,655 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3040 ms
+2024-05-12T15:59:24,742 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-12T15:59:25,082 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-12T15:59:25,084 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-12T15:59:25,109 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-12T15:59:25,475 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12T15:59:25,645 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-12T15:59:25,648 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-12T15:59:26,175 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12T15:59:26,253 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12T15:59:27,227 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12T15:59:27,262 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T15:59:28,330 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12T15:59:30,170 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-05-12T15:59:30,203 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2024-05-12T15:59:30,218 INFO  com.github.leovd100.message.service.Application - Started Application in 9.681 seconds (process running for 11.081)
+2024-05-12T16:03:00,405 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:03:00,587 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-12T16:03:12,801 INFO  com.github.leovd100.message.service.Application - Starting Application using Java 21.0.1 with PID 18700 (C:\marketing Capture\message.service\message.service\target\classes started by Leonardo Vieira in C:\marketing Capture\message.service\message.service)
+2024-05-12T16:03:12,819 DEBUG com.github.leovd100.message.service.Application - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T16:03:12,820 INFO  com.github.leovd100.message.service.Application - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T16:03:14,470 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12T16:03:14,582 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interface.
+2024-05-12T16:03:15,528 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2024-05-12T16:03:15,542 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:03:15,545 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T16:03:15,546 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T16:03:15,679 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T16:03:15,681 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2751 ms
+2024-05-12T16:03:15,733 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-12T16:03:15,999 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-12T16:03:16,002 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-12T16:03:16,016 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-12T16:03:16,286 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12T16:03:16,403 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-12T16:03:16,406 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-12T16:03:16,805 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12T16:03:16,868 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12T16:03:17,751 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12T16:03:17,785 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:03:18,724 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12T16:03:20,727 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:03:20,768 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2024-05-12T16:03:20,783 INFO  com.github.leovd100.message.service.Application - Started Application in 9.211 seconds (process running for 10.911)
+2024-05-12T16:04:56,930 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12T16:04:56,931 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-12T16:04:56,932 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-12T16:04:57,260 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! a3eb1837-ea5e-4c39-af65-152f2188bf5a
+2024-05-12T16:04:57,287 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:04:57,366 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2a7b5925:0/SimpleConnection@1f302b94 [delegate=amqp://guest@127.0.0.1:5672/, localPort=51195]
+2024-05-12T16:04:57,411 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq a3eb1837-ea5e-4c39-af65-152f2188bf5a
+2024-05-12T16:04:57,413 ERROR org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Shutdown Signal: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no exchange 'sms-request-exchange' in vhost '/', class-id=60, method-id=40)
+2024-05-12T16:04:57,461 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq a3eb1837-ea5e-4c39-af65-152f2188bf5a
+2024-05-12T16:04:57,468 ERROR org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Shutdown Signal: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no exchange 'email-request-exchange' in vhost '/', class-id=60, method-id=40)
+2024-05-12T16:27:12,664 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 87e36b9a-9b15-44fa-9b9f-1290e281b14c
+2024-05-12T16:27:12,667 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 87e36b9a-9b15-44fa-9b9f-1290e281b14c
+2024-05-12T16:27:12,667 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 87e36b9a-9b15-44fa-9b9f-1290e281b14c
+2024-05-12T16:28:22,591 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:28:22,771 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-12T16:28:22,778 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-12T16:28:37,736 INFO  com.github.leovd100.message.service.Application - Starting Application using Java 21.0.1 with PID 7780 (C:\marketing Capture\message.service\message.service\target\classes started by Leonardo Vieira in C:\marketing Capture\message.service\message.service)
+2024-05-12T16:28:37,758 DEBUG com.github.leovd100.message.service.Application - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T16:28:37,759 INFO  com.github.leovd100.message.service.Application - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T16:28:38,988 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12T16:28:39,061 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interface.
+2024-05-12T16:28:40,009 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2024-05-12T16:28:40,026 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:28:40,031 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T16:28:40,031 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T16:28:40,199 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T16:28:40,201 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2340 ms
+2024-05-12T16:28:40,268 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-12T16:28:40,573 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-12T16:28:40,574 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-12T16:28:40,592 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-12T16:28:40,838 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12T16:28:40,996 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-12T16:28:41,000 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-12T16:28:41,496 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12T16:28:41,574 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12T16:28:42,516 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12T16:28:42,555 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:28:43,536 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12T16:28:44,864 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:28:44,894 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2024-05-12T16:28:44,906 INFO  com.github.leovd100.message.service.Application - Started Application in 7.853 seconds (process running for 19.711)
+2024-05-12T16:28:47,959 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12T16:28:47,959 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-12T16:28:47,961 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-12T16:28:48,250 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! ee217d6c-8d4a-40e0-a2cc-8e29e6db44b5
+2024-05-12T16:28:48,278 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:28:48,340 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2b76ecd5:0/SimpleConnection@24fbff4f [delegate=amqp://guest@127.0.0.1:5672/, localPort=61756]
+2024-05-12T16:28:48,377 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq ee217d6c-8d4a-40e0-a2cc-8e29e6db44b5
+2024-05-12T16:28:48,379 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq ee217d6c-8d4a-40e0-a2cc-8e29e6db44b5
+2024-05-12T16:31:15,024 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:31:15,213 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-12T16:31:15,221 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-12T16:31:23,162 INFO  com.github.leovd100.message.service.Application - Starting Application using Java 21.0.1 with PID 3632 (C:\marketing Capture\message.service\message.service\target\classes started by Leonardo Vieira in C:\marketing Capture\message.service\message.service)
+2024-05-12T16:31:23,181 DEBUG com.github.leovd100.message.service.Application - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T16:31:23,183 INFO  com.github.leovd100.message.service.Application - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T16:31:24,344 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12T16:31:24,420 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
+2024-05-12T16:31:25,264 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2024-05-12T16:31:25,274 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:31:25,277 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T16:31:25,278 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T16:31:25,396 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T16:31:25,398 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2124 ms
+2024-05-12T16:31:25,464 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-12T16:31:25,731 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-12T16:31:25,733 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-12T16:31:25,749 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-12T16:31:25,990 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12T16:31:26,086 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-12T16:31:26,093 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-12T16:31:26,501 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12T16:31:26,557 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12T16:31:27,442 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12T16:31:27,476 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:31:28,319 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12T16:31:29,531 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:31:29,564 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2024-05-12T16:31:29,574 INFO  com.github.leovd100.message.service.Application - Started Application in 7.069 seconds (process running for 8.305)
+2024-05-12T16:31:45,064 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12T16:31:45,065 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-12T16:31:45,066 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-12T16:31:45,358 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 61de604e-0219-407b-94e7-70dbd8cbab5d
+2024-05-12T16:31:45,380 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:31:45,387 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq java.net.ConnectException: Connection refused: no further information
+2024-05-12T16:31:45,389 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:31:45,412 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq java.net.ConnectException: Connection refused: no further information
+2024-05-12T16:32:02,617 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:32:02,811 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-12T16:32:02,830 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-12T16:32:08,897 INFO  com.github.leovd100.message.service.Application - Starting Application using Java 21.0.1 with PID 18288 (C:\marketing Capture\message.service\message.service\target\classes started by Leonardo Vieira in C:\marketing Capture\message.service\message.service)
+2024-05-12T16:32:08,914 DEBUG com.github.leovd100.message.service.Application - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T16:32:08,916 INFO  com.github.leovd100.message.service.Application - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T16:32:10,196 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12T16:32:10,281 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+2024-05-12T16:32:11,169 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2024-05-12T16:32:11,182 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:32:11,186 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T16:32:11,186 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T16:32:11,332 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T16:32:11,334 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2323 ms
+2024-05-12T16:32:11,401 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-12T16:32:11,658 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-12T16:32:11,661 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-12T16:32:11,677 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-12T16:32:11,919 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12T16:32:12,037 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-12T16:32:12,041 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-12T16:32:12,482 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12T16:32:12,537 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12T16:32:13,377 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12T16:32:13,410 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:32:14,202 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12T16:32:15,969 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:32:16,023 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2024-05-12T16:32:16,046 INFO  com.github.leovd100.message.service.Application - Started Application in 7.883 seconds (process running for 8.986)
+2024-05-12T16:32:24,189 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:32:24,384 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-12T16:32:24,404 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-12T16:32:30,544 INFO  com.github.leovd100.message.service.Application - Starting Application using Java 21.0.1 with PID 2644 (C:\marketing Capture\message.service\message.service\target\classes started by Leonardo Vieira in C:\marketing Capture\message.service\message.service)
+2024-05-12T16:32:30,559 DEBUG com.github.leovd100.message.service.Application - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T16:32:30,561 INFO  com.github.leovd100.message.service.Application - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T16:32:31,963 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12T16:32:32,059 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 1 JPA repository interface.
+2024-05-12T16:32:33,067 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2024-05-12T16:32:33,080 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:32:33,084 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T16:32:33,084 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T16:32:33,247 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T16:32:33,248 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2593 ms
+2024-05-12T16:32:33,344 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-12T16:32:33,666 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-12T16:32:33,668 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-12T16:32:33,687 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-12T16:32:34,002 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12T16:32:34,124 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-12T16:32:34,130 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-12T16:32:34,591 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12T16:32:34,656 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12T16:32:35,557 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12T16:32:35,589 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:32:36,586 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12T16:32:38,258 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:32:38,291 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2024-05-12T16:32:38,305 INFO  com.github.leovd100.message.service.Application - Started Application in 8.41 seconds (process running for 9.493)
+2024-05-12T16:32:41,880 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12T16:32:41,881 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-12T16:32:41,882 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-12T16:32:42,181 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! e446cf11-dc39-4df2-8258-72fd686b36b0
+2024-05-12T16:32:42,215 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:32:42,221 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq java.net.ConnectException: Connection refused: no further information
+2024-05-12T16:32:42,222 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:32:42,223 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq java.net.ConnectException: Connection refused: no further information
+2024-05-12T16:33:14,521 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:33:14,706 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-12T16:33:14,718 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-12T16:33:21,133 INFO  com.github.leovd100.message.service.Application - Starting Application using Java 21.0.1 with PID 19480 (C:\marketing Capture\message.service\message.service\target\classes started by Leonardo Vieira in C:\marketing Capture\message.service\message.service)
+2024-05-12T16:33:21,146 DEBUG com.github.leovd100.message.service.Application - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T16:33:21,147 INFO  com.github.leovd100.message.service.Application - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T16:33:22,338 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12T16:33:22,412 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface.
+2024-05-12T16:33:23,263 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2024-05-12T16:33:23,277 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:33:23,281 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T16:33:23,281 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T16:33:23,418 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T16:33:23,419 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2180 ms
+2024-05-12T16:33:23,485 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-12T16:33:23,774 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-12T16:33:23,777 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-12T16:33:23,793 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-12T16:33:24,108 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12T16:33:24,262 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-12T16:33:24,267 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-12T16:33:24,867 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12T16:33:24,939 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12T16:33:25,962 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12T16:33:25,995 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:33:26,966 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12T16:33:28,779 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:33:28,816 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2024-05-12T16:33:28,827 INFO  com.github.leovd100.message.service.Application - Started Application in 8.366 seconds (process running for 9.488)
+2024-05-12T16:36:29,844 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12T16:36:29,845 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-12T16:36:29,846 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-12T16:36:30,143 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! b2e57a27-9207-4780-8a38-282bb065219d
+2024-05-12T16:36:30,173 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:36:30,180 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq java.net.ConnectException: Connection refused: no further information
+2024-05-12T16:36:30,181 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:36:30,182 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq java.net.ConnectException: Connection refused: no further information
+2024-05-12T16:36:55,163 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 8f779de1-f0f2-4dd2-96ee-8b7054f6d62d
+2024-05-12T16:36:55,163 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:36:55,164 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq java.net.ConnectException: Connection refused: no further information
+2024-05-12T16:36:55,165 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:36:55,167 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq java.net.ConnectException: Connection refused: no further information
+2024-05-12T16:37:02,795 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:37:11,303 INFO  com.github.leovd100.message.service.Application - Starting Application using Java 21.0.1 with PID 24364 (C:\marketing Capture\message.service\message.service\target\classes started by Leonardo Vieira in C:\marketing Capture\message.service\message.service)
+2024-05-12T16:37:11,322 DEBUG com.github.leovd100.message.service.Application - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T16:37:11,324 INFO  com.github.leovd100.message.service.Application - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T16:37:12,782 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12T16:37:12,871 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
+2024-05-12T16:37:13,836 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2024-05-12T16:37:13,848 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:37:13,852 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T16:37:13,853 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T16:37:13,998 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T16:37:14,000 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2568 ms
+2024-05-12T16:37:14,088 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-12T16:37:14,547 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-12T16:37:14,551 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-12T16:37:14,573 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-12T16:37:14,976 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12T16:37:15,211 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-12T16:37:15,218 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-12T16:37:15,914 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12T16:37:16,021 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12T16:37:17,280 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12T16:37:17,332 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:37:18,518 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12T16:37:21,358 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:37:21,418 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2024-05-12T16:37:21,438 INFO  com.github.leovd100.message.service.Application - Started Application in 10.95 seconds (process running for 12.31)
+2024-05-12T16:38:15,451 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:38:15,643 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-12T16:38:15,653 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-12T16:38:23,207 INFO  com.github.leovd100.message.service.Application - Starting Application using Java 21.0.1 with PID 18640 (C:\marketing Capture\message.service\message.service\target\classes started by Leonardo Vieira in C:\marketing Capture\message.service\message.service)
+2024-05-12T16:38:23,220 DEBUG com.github.leovd100.message.service.Application - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T16:38:23,221 INFO  com.github.leovd100.message.service.Application - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T16:38:24,449 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12T16:38:24,532 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interface.
+2024-05-12T16:38:25,474 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2024-05-12T16:38:25,490 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:38:25,493 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T16:38:25,494 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T16:38:25,641 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T16:38:25,643 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2330 ms
+2024-05-12T16:38:25,728 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-12T16:38:26,092 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-12T16:38:26,095 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-12T16:38:26,112 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-12T16:38:26,395 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12T16:38:26,519 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-12T16:38:26,522 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-12T16:38:27,080 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12T16:38:27,195 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12T16:38:28,436 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12T16:38:28,486 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:38:29,583 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12T16:38:31,498 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:38:31,537 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2024-05-12T16:38:31,551 INFO  com.github.leovd100.message.service.Application - Started Application in 9.04 seconds (process running for 10.303)
+2024-05-12T16:38:45,535 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12T16:38:45,536 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-12T16:38:45,537 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-12T16:38:45,892 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! e71e60e1-4865-48a6-b609-6fe4ec4f293d
+2024-05-12T16:38:45,920 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:38:45,930 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq java.net.ConnectException: Connection refused: no further information
+2024-05-12T16:38:45,931 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:38:45,945 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq java.net.ConnectException: Connection refused: no further information
+2024-05-12T16:39:42,779 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:39:42,983 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-12T16:39:43,002 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-12T16:39:49,319 INFO  com.github.leovd100.message.service.Application - Starting Application using Java 21.0.1 with PID 16628 (C:\marketing Capture\message.service\message.service\target\classes started by Leonardo Vieira in C:\marketing Capture\message.service\message.service)
+2024-05-12T16:39:49,345 DEBUG com.github.leovd100.message.service.Application - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T16:39:49,346 INFO  com.github.leovd100.message.service.Application - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T16:39:50,535 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12T16:39:50,603 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interface.
+2024-05-12T16:39:51,471 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2024-05-12T16:39:51,481 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:39:51,484 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T16:39:51,484 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T16:39:51,604 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T16:39:51,606 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2162 ms
+2024-05-12T16:39:51,663 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-12T16:39:51,925 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-12T16:39:51,927 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-12T16:39:51,942 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-12T16:39:52,200 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12T16:39:52,302 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-12T16:39:52,308 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-12T16:39:52,719 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12T16:39:52,771 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12T16:39:53,657 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12T16:39:53,692 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:39:54,572 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12T16:39:55,860 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:39:55,889 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2024-05-12T16:39:55,899 INFO  com.github.leovd100.message.service.Application - Started Application in 7.277 seconds (process running for 8.368)
+2024-05-12T16:39:59,597 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12T16:39:59,597 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-12T16:39:59,599 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-12T16:39:59,885 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 11ae605a-a99b-4b8c-a620-dcb438fb3dc3
+2024-05-12T16:39:59,911 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:39:59,935 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq AMQPjava.net.ConnectException: Connection refused: no further information
+2024-05-12T16:39:59,937 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:39:59,939 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq AMQPjava.net.ConnectException: Connection refused: no further information
+2024-05-12T16:40:30,199 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:40:30,385 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-12T16:40:30,396 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-12T16:40:36,895 INFO  com.github.leovd100.message.service.Application - Starting Application using Java 21.0.1 with PID 18260 (C:\marketing Capture\message.service\message.service\target\classes started by Leonardo Vieira in C:\marketing Capture\message.service\message.service)
+2024-05-12T16:40:36,915 DEBUG com.github.leovd100.message.service.Application - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T16:40:36,917 INFO  com.github.leovd100.message.service.Application - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T16:40:38,121 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12T16:40:38,195 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
+2024-05-12T16:40:39,078 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2024-05-12T16:40:39,089 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:40:39,093 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T16:40:39,093 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T16:40:39,213 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T16:40:39,215 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2208 ms
+2024-05-12T16:40:39,277 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-12T16:40:39,545 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-12T16:40:39,548 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-12T16:40:39,566 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-12T16:40:39,828 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12T16:40:39,954 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-12T16:40:39,957 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-12T16:40:40,340 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12T16:40:40,395 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12T16:40:41,240 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12T16:40:41,272 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:40:42,113 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12T16:40:43,650 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:40:43,685 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2024-05-12T16:40:43,698 INFO  com.github.leovd100.message.service.Application - Started Application in 7.503 seconds (process running for 8.662)
+2024-05-12T16:42:36,201 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12T16:42:36,202 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-12T16:42:36,204 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-12T16:42:36,526 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! a146baeb-354e-4fac-8bff-af89d1b09147
+2024-05-12T16:42:36,554 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:42:36,560 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq AMQPjava.net.ConnectException: Connection refused: no further information
+2024-05-12T16:42:39,270 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! b3fcc09f-d886-4863-8631-b0e8f0434a32
+2024-05-12T16:42:39,270 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:42:39,282 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq AMQPjava.net.ConnectException: Connection refused: no further information
+2024-05-12T16:47:34,753 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:47:34,938 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-12T16:47:34,950 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-12T16:47:41,526 INFO  com.github.leovd100.message.service.Application - Starting Application using Java 21.0.1 with PID 15744 (C:\marketing Capture\message.service\message.service\target\classes started by Leonardo Vieira in C:\marketing Capture\message.service\message.service)
+2024-05-12T16:47:41,542 DEBUG com.github.leovd100.message.service.Application - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T16:47:41,544 INFO  com.github.leovd100.message.service.Application - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T16:47:42,733 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12T16:47:42,814 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interface.
+2024-05-12T16:47:43,623 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2024-05-12T16:47:43,633 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:47:43,636 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T16:47:43,637 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T16:47:43,770 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T16:47:43,772 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2135 ms
+2024-05-12T16:47:43,835 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-12T16:47:44,165 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-12T16:47:44,168 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-12T16:47:44,184 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-12T16:47:44,427 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12T16:47:44,557 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-12T16:47:44,560 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-12T16:47:44,980 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12T16:47:45,049 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12T16:47:46,317 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12T16:47:46,355 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:47:47,265 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12T16:47:48,786 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:47:48,844 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2024-05-12T16:47:48,864 INFO  com.github.leovd100.message.service.Application - Started Application in 8.031 seconds (process running for 9.197)
+2024-05-12T16:47:56,096 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12T16:47:56,096 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-12T16:47:56,097 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-12T16:47:56,390 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! c5750ef7-9243-4af6-b282-9061aa6106ff
+2024-05-12T16:47:56,418 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:47:56,427 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq AMQPjava.net.ConnectException: Connection refused: no further information
+2024-05-12T16:50:08,957 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! f936a86f-0ff6-4950-b020-399a53c19d87
+2024-05-12T16:50:08,957 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:50:08,973 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq AMQPjava.net.ConnectException: Connection refused: no further information
+2024-05-12T16:50:52,938 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! cebd3c1d-7bfc-4d5f-bde4-5465b7aa4a8e
+2024-05-12T16:50:52,939 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:50:52,960 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq AMQPjava.net.ConnectException: Connection refused: no further information
+2024-05-12T16:51:32,379 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 8b4bd1f1-056e-449e-a661-b3ca70a9e475
+2024-05-12T16:51:32,379 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:51:32,381 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq AMQPjava.net.ConnectException: Connection refused: no further information
+2024-05-12T16:52:03,285 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 62218670-b04c-400f-ab35-ea8415625cb3
+2024-05-12T16:52:03,286 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:52:03,314 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq AMQPjava.net.ConnectException: Connection refused: no further information
+2024-05-12T16:53:31,696 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:53:31,884 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-12T16:53:31,904 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-12T16:53:36,252 INFO  com.github.leovd100.message.service.Application - Starting Application using Java 21.0.1 with PID 8696 (C:\marketing Capture\message.service\message.service\target\classes started by Leonardo Vieira in C:\marketing Capture\message.service\message.service)
+2024-05-12T16:53:36,283 DEBUG com.github.leovd100.message.service.Application - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T16:53:36,285 INFO  com.github.leovd100.message.service.Application - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T16:53:38,157 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12T16:53:38,260 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interface.
+2024-05-12T16:53:39,325 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2024-05-12T16:53:39,349 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:53:39,353 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T16:53:39,354 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T16:53:39,552 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T16:53:39,556 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3113 ms
+2024-05-12T16:53:39,647 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-12T16:53:40,100 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-12T16:53:40,105 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-12T16:53:40,132 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-12T16:53:40,476 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12T16:53:40,657 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-12T16:53:40,662 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-12T16:53:41,212 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12T16:53:41,326 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12T16:53:42,854 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12T16:53:42,911 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T16:53:44,465 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12T16:53:48,016 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-05-12T16:53:48,067 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2024-05-12T16:53:48,098 INFO  com.github.leovd100.message.service.Application - Started Application in 12.633 seconds (process running for 13.987)
+2024-05-12T16:53:59,975 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12T16:53:59,975 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-12T16:53:59,977 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-12T16:54:00,261 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! c3ba0e32-638d-4016-9419-45a5d23d1669
+2024-05-12T16:54:00,288 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:54:00,295 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq AMQPjava.net.ConnectException: Connection refused: no further information
+2024-05-12T16:56:40,170 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 127bfaaf-f965-4e95-ba5b-d5a3960681c9
+2024-05-12T16:56:40,171 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T16:56:40,173 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq AMQPjava.net.ConnectException: Connection refused: no further information
+2024-05-12T17:01:38,216 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 661df4ef-fc6e-482f-86d9-86de132ecfa2
+2024-05-12T17:01:38,217 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T17:01:38,219 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq AMQPjava.net.ConnectException: Connection refused: no further information
+2024-05-12T17:03:37,845 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T17:03:38,036 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-12T17:03:38,045 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-12T17:03:44,895 INFO  com.github.leovd100.message.service.Application - Starting Application using Java 21.0.1 with PID 1784 (C:\marketing Capture\message.service\message.service\target\classes started by Leonardo Vieira in C:\marketing Capture\message.service\message.service)
+2024-05-12T17:03:44,906 DEBUG com.github.leovd100.message.service.Application - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-12T17:03:44,908 INFO  com.github.leovd100.message.service.Application - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T17:03:46,051 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12T17:03:46,138 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interface.
+2024-05-12T17:03:46,985 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2024-05-12T17:03:46,997 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-05-12T17:03:47,001 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T17:03:47,001 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T17:03:47,127 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T17:03:47,129 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2137 ms
+2024-05-12T17:03:47,183 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-12T17:03:47,471 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-12T17:03:47,473 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-12T17:03:47,487 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-12T17:03:47,769 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12T17:03:47,898 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-12T17:03:47,902 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-12T17:03:48,383 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12T17:03:48,463 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12T17:03:49,400 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12T17:03:49,439 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T17:03:50,293 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12T17:03:51,651 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-05-12T17:03:51,685 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2024-05-12T17:03:51,696 INFO  com.github.leovd100.message.service.Application - Started Application in 7.477 seconds (process running for 8.626)
+2024-05-12T17:04:10,214 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12T17:04:10,214 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-12T17:04:10,215 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-12T17:04:10,541 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 25461196-fb65-4cb2-8bdc-c9a59d5d1269
+2024-05-12T17:04:10,569 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T17:04:10,580 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq AMQPjava.net.ConnectException: Connection refused: no further information
+2024-05-12T17:04:15,372 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 61a492b6-e49c-4300-b8e2-8e89bd61e890
+2024-05-12T17:04:15,372 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-12T17:04:15,388 ERROR com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Error sending request to rabbitMq AMQPjava.net.ConnectException: Connection refused: no further information
+2024-05-12T17:06:07,473 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'

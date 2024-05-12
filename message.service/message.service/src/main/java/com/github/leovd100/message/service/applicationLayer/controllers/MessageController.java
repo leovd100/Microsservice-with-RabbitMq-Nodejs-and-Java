@@ -1,8 +1,7 @@
 package com.github.leovd100.message.service.applicationLayer.controllers;
 
-import com.github.leovd100.message.service.applicationLayer.services.SendMessageService;
-import com.github.leovd100.message.service.applicationLayer.services.impl.SendMessegeServiceImpl;
-import com.github.leovd100.message.service.domainLayer.model.Lead;
+import com.github.leovd100.message.service.applicationLayer.components.ProcessData;
+import com.github.leovd100.message.service.domainLayer.dto.LeadDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,16 +13,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/send-message")
 public class MessageController {
 
-    private final SendMessageService service;
+    private final ProcessData processData;
 
     @Autowired
-    public MessageController(SendMessegeServiceImpl service) {
-        this.service = service;
+    public MessageController(ProcessData processData) {
+        this.processData = processData;
+
     }
 
     @PostMapping
-    public ResponseEntity<Void> receiveMessageForNewUsers(@RequestBody Lead lead){
-        service.sendMessages(lead);
+    public ResponseEntity<Void> registrationNewUsers(@RequestBody LeadDto leadDto){
+        processData.sendDto(leadDto);
         return ResponseEntity.ok().build();
     }
 

@@ -3,7 +3,6 @@ package com.github.leovd100.capture.system.applicationLayer.exception.controller
 import com.github.leovd100.capture.system.domainLayer.model.StandardError;
 import com.github.leovd100.capture.system.infraestructureLayer.exceptions.RequestException;
 import feign.FeignException;
-import jakarta.persistence.PersistenceException;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
