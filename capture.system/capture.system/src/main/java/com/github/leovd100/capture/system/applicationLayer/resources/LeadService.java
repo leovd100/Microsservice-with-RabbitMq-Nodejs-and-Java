@@ -1,9 +1,8 @@
 package com.github.leovd100.capture.system.applicationLayer.resources;
 
 import com.github.leovd100.capture.system.domainLayer.dto.LeadDto;
-import com.github.leovd100.capture.system.domainLayer.dto.LeadResponseDto;
+import com.github.leovd100.capture.system.domainLayer.dto.builder.LeadResponseDto;
 
 public interface LeadService {
-
-    LeadResponseDto saveLead(LeadDto leadDto);
+    LeadResponseDto sendData(LeadDto leadDto);
 }

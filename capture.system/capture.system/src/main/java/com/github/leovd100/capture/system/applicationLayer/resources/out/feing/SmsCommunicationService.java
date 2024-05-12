@@ -1,4 +1,4 @@
-package com.github.leovd100.capture.system.infraestructureLayer.services;
+package com.github.leovd100.capture.system.applicationLayer.resources.out.feing;
 
 import com.github.leovd100.capture.system.domainLayer.entities.Lead;
 import feign.Headers;

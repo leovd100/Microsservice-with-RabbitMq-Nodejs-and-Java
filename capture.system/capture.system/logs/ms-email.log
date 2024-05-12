@@ -1,0 +1,34 @@
+2024-05-12T14:27:49,958 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-12T14:27:50,092 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Starting MarketingCaptureSystemApplication using Java 17.0.2 with PID 20932 (C:\marketing Capture\capture.system\capture.system\target\classes started by Leonardo Vieira in C:\marketing Capture\capture.system\capture.system)
+2024-05-12T14:27:50,099 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-12T14:27:51,572 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-12T14:27:51,610 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 JPA repository interfaces.
+2024-05-12T14:27:52,544 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-05-12T14:27:52,562 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-05-12T14:27:52,566 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-12T14:27:52,566 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-12T14:27:52,748 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-12T14:27:52,750 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2527 ms
+2024-05-12T14:27:52,828 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-12T14:27:53,112 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-12T14:27:53,116 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-12T14:27:53,129 INFO  org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-12T14:27:53,373 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-12T14:27:53,477 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-12T14:27:53,482 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-12T14:27:53,941 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-12T14:27:54,001 WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-12T14:27:55,086 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-12T14:27:55,148 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-12T14:27:55,442 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-12T14:27:57,420 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-05-12T14:27:57,458 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2024-05-12T14:27:57,469 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Started MarketingCaptureSystemApplication in 8.354 seconds (process running for 9.475)
+2024-05-12T14:28:26,313 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-12T14:28:26,314 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-12T14:28:26,315 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-12T14:28:26,561 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - INFO
+2024-05-12T14:28:26,562 WARN  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - WARN
+2024-05-12T14:28:26,562 ERROR com.github.leovd100.capture.system.applicationLayer.controller.LeadController - ERROR
+2024-05-12T14:28:26,562 FATAL com.github.leovd100.capture.system.applicationLayer.controller.LeadController - FATAL
+2024-05-12T14:33:52,120 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'

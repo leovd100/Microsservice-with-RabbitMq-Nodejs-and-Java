@@ -14,7 +14,7 @@ public class CheckServerController {
     private String serverPort;
 
     @GetMapping
-    public ResponseEntity<String> serverUp() {
+    public ResponseEntity<String> checkServer() {
             return ResponseEntity.ok("Server up in " + serverPort);
     }
 }
