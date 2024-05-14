@@ -4,24 +4,24 @@ const emailService = require("../services/EmailService.js");
 async function startConsumer() {
   try {
     const connection = await amqp.connect(
-      `amqp://${process.env.USER}:${process.env.PASSWORD}@${process.env.RABBITMQ_HOST}:${process.env.RABBITMQ_PORT}`
+      `amqp://${process.env.USER_RABBIT}:${process.env.PASSWORD_RABBIT}@${process.env.RABBITMQ_HOST}:${process.env.RABBITMQ_PORT}`
     );
 
     const channel = await connection.createChannel();
     const queueName = process.env.QUEUE_NAME;
     await channel.assertQueue(queueName, { durable: true });
 
-    console.log("Aguardando mensagens");
+    console.log("Waiting for messages");
 
     channel.consume(queueName, (msg) => {
       if (msg !== null) {
-        console.log("Mensagem recebida:", msg.content.toString());
+        console.log("Message received:", msg.content.toString());
         emailService.send(msg.content.toString());
         channel.ack(msg);
       }
     });
   } catch (err) {
-    console.log("Erro ao consumir mensagens");
+    console.log("Error when consuming messages");
   }
 }
 

@@ -300,3 +300,239 @@
 2024-05-12T23:44:22,586 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
 2024-05-12T23:44:22,796 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User leonardo successfully registered!
 2024-05-12T23:44:25,892 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-14T11:38:20,831 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-14T11:38:20,933 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Starting MarketingCaptureSystemApplication using Java 17.0.2 with PID 62764 (C:\marketing Capture\capture.system\capture.system\target\classes started by Leonardo Vieira in C:\marketing Capture\capture.system\capture.system)
+2024-05-14T11:38:20,945 DEBUG com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-14T11:38:20,947 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14T11:38:23,987 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-05-14T11:38:24,017 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-05-14T11:38:24,027 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14T11:38:24,028 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14T11:38:24,293 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14T11:38:24,297 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3184 ms
+2024-05-14T11:38:27,697 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-05-14T11:38:27,767 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2024-05-14T11:38:27,796 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Started MarketingCaptureSystemApplication in 8.49 seconds (process running for 10.313)
+2024-05-14T11:48:31,516 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14T11:48:31,516 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14T11:48:31,518 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-14T11:48:43,460 INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 465 ms
+2024-05-14T11:48:58,690 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-14T11:49:19,175 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-14T11:49:19,329 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Gustavo successfully registered!
+2024-05-14T11:53:49,080 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-14T11:53:49,096 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Gustavo successfully registered!
+2024-05-14T14:23:56,696 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-14T14:23:56,814 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Starting MarketingCaptureSystemApplication using Java 17.0.2 with PID 11512 (C:\marketing Capture\capture.system\capture.system\target\classes started by Leonardo Vieira in C:\marketing Capture\capture.system\capture.system)
+2024-05-14T14:23:56,824 DEBUG com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-14T14:23:56,827 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14T14:24:00,560 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-05-14T14:24:00,617 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-14T14:24:00,654 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14T14:24:00,655 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14T14:24:00,979 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14T14:24:00,992 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3953 ms
+2024-05-14T14:24:01,159 WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'checkServerController': Injection of autowired dependencies failed
+2024-05-14T14:24:01,165 INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-05-14T14:24:01,205 INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-14T14:24:01,279 ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'checkServerController': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:503) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1414) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:518) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615) ~[spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-3.1.11.jar:3.1.11]
+	at com.github.leovd100.capture.system.MarketingCaptureSystemApplication.main(MarketingCaptureSystemApplication.java:18) [classes/:?]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'server.port' in value "${server.port}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-6.0.19.jar:6.0.19]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.0.19.jar:6.0.19]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.0.19.jar:6.0.19]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200) ~[spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:919) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1358) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:773) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:756) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:497) ~[spring-beans-6.0.19.jar:6.0.19]
+	... 17 more
+2024-05-14T14:24:21,855 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-14T14:24:21,925 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Starting MarketingCaptureSystemApplication using Java 17.0.2 with PID 40876 (C:\marketing Capture\capture.system\capture.system\target\classes started by Leonardo Vieira in C:\marketing Capture\capture.system\capture.system)
+2024-05-14T14:24:21,941 DEBUG com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-14T14:24:21,944 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14T14:24:25,327 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-05-14T14:24:25,349 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-14T14:24:25,355 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14T14:24:25,356 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14T14:24:25,568 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14T14:24:25,575 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3412 ms
+2024-05-14T14:24:25,722 WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'checkServerController': Injection of autowired dependencies failed
+2024-05-14T14:24:25,729 INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-05-14T14:24:25,763 INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-14T14:24:25,825 ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'checkServerController': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:503) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1414) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:518) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615) ~[spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-3.1.11.jar:3.1.11]
+	at com.github.leovd100.capture.system.MarketingCaptureSystemApplication.main(MarketingCaptureSystemApplication.java:18) [classes/:?]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'server.port' in value "${server.port}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-6.0.19.jar:6.0.19]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.0.19.jar:6.0.19]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.0.19.jar:6.0.19]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200) ~[spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:919) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1358) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:773) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:756) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:497) ~[spring-beans-6.0.19.jar:6.0.19]
+	... 17 more
+2024-05-14T14:24:43,197 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-14T14:24:43,268 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Starting MarketingCaptureSystemApplication using Java 17.0.2 with PID 33812 (C:\marketing Capture\capture.system\capture.system\target\classes started by Leonardo Vieira in C:\marketing Capture\capture.system\capture.system)
+2024-05-14T14:24:43,279 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14T14:24:46,727 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-05-14T14:24:46,748 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-14T14:24:46,754 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14T14:24:46,755 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14T14:24:47,059 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14T14:24:47,065 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3580 ms
+2024-05-14T14:24:47,210 WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'checkServerController': Injection of autowired dependencies failed
+2024-05-14T14:24:47,221 INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-05-14T14:24:47,258 INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-14T14:24:47,337 ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'checkServerController': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:503) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1414) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:518) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615) ~[spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-3.1.11.jar:3.1.11]
+	at com.github.leovd100.capture.system.MarketingCaptureSystemApplication.main(MarketingCaptureSystemApplication.java:18) [classes/:?]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'server.port' in value "${server.port}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-6.0.19.jar:6.0.19]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.0.19.jar:6.0.19]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.0.19.jar:6.0.19]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200) ~[spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:919) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1358) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:773) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:756) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:497) ~[spring-beans-6.0.19.jar:6.0.19]
+	... 17 more
+2024-05-14T14:25:36,517 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-14T14:25:36,606 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Starting MarketingCaptureSystemApplication using Java 17.0.2 with PID 12072 (C:\marketing Capture\capture.system\capture.system\target\classes started by Leonardo Vieira in C:\marketing Capture\capture.system\capture.system)
+2024-05-14T14:25:36,635 DEBUG com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-14T14:25:36,637 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14T14:25:39,863 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-05-14T14:25:39,880 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-05-14T14:25:39,886 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14T14:25:39,887 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14T14:25:40,123 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14T14:25:40,127 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3278 ms
+2024-05-14T14:25:40,258 WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'checkServerController': Injection of autowired dependencies failed
+2024-05-14T14:25:40,266 INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-05-14T14:25:40,295 INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-14T14:25:40,374 ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'checkServerController': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:503) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1414) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:518) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615) ~[spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-3.1.11.jar:3.1.11]
+	at com.github.leovd100.capture.system.MarketingCaptureSystemApplication.main(MarketingCaptureSystemApplication.java:18) [classes/:?]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'server.port' in value "${server.port}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-6.0.19.jar:6.0.19]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.0.19.jar:6.0.19]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.0.19.jar:6.0.19]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200) ~[spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:919) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1358) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:773) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:756) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:497) ~[spring-beans-6.0.19.jar:6.0.19]
+	... 17 more
+2024-05-14T22:21:24,174 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-14T22:21:24,265 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Starting MarketingCaptureSystemApplication using Java 17.0.2 with PID 77444 (C:\marketing Capture\capture.system\capture.system\target\classes started by Leonardo Vieira in C:\marketing Capture\capture.system\capture.system)
+2024-05-14T22:21:24,277 DEBUG com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-14T22:21:24,280 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14T22:21:27,703 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-05-14T22:21:27,720 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-05-14T22:21:27,727 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-14T22:21:27,728 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-14T22:21:27,959 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-14T22:21:27,964 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3490 ms
+2024-05-14T22:21:30,901 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-05-14T22:21:30,946 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2024-05-14T22:21:30,969 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Started MarketingCaptureSystemApplication in 8.017 seconds (process running for 9.486)
+2024-05-14T22:24:08,841 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-14T22:24:08,842 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-14T22:24:08,843 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-14T22:24:09,501 INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 405 ms
+2024-05-14T22:24:38,555 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-14T22:24:39,197 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Leonardo successfully registered!

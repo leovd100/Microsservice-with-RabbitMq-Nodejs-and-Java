@@ -1,15 +1,9 @@
 class EmailTemplate {
-  constructor(email, body) {
+  constructor(email, subject, html, textHtml) {
     this.email = email;
-    this.body = body;
-  }
-
-  getEmail() {
-    this.getEmail;
-  }
-
-  getBody() {
-    this.getBody;
+    this.subject = subject;
+    this.html = html;
+    this.textHtml = textHtml;
   }
 }
 

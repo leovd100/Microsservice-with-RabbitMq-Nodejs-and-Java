@@ -1,11 +1,17 @@
 version: "3.1"
 services:
+  rabbitmq:
+    image: rabbitmq:3.12.14-management
+    container_name: rabbitmq-masterdev
+    ports:
+      - 5672:5672
+      - 15672:15672
   postgres:
-    image: postgres
+    image: postgresql
     container_name: postgres
     environment:
       - POSTGRES_PASSWORD=password
     ports:
       - 5432:5432
     volumes:
-      - /tem/database:/var/lib/postgresql/data
+      - /tem/
