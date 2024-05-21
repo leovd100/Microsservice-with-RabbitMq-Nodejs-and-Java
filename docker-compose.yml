@@ -2,16 +2,56 @@ version: "3.1"
 services:
   rabbitmq:
     image: rabbitmq:3.12.14-management
-    container_name: rabbitmq-masterdev
+    container_name: rabbitmq
     ports:
-      - 5672:5672
-      - 15672:15672
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - my-network
   postgres:
-    image: postgresql
+    image: postgres
     container_name: postgres
     environment:
-      - POSTGRES_PASSWORD=password
+      POSTGRES_PASSWORD: password
     ports:
-      - 5432:5432
+      - "5432:5432"
     volumes:
-      - /tem/
+      - /temp/
+    networks:
+      - my-network
+
+  capture-service:
+    image: capture-service
+    container_name: capture-service
+    ports:
+      - "8082:8082"
+    environment:
+      SERVER_PORT: 8082
+      MESSAGE_SERVICE_URL: http://message-processor:8083
+    networks:
+      - my-network
+    depends_on:
+      - message-processor
+
+  message-processor:
+    image: message-processor
+    container_name: message-processor
+    ports:
+      - "8083:8083"
+    environment:
+      SERVER_PORT: 8083
+      RABBIT-HOST: rabbitmq
+      RABBIT-PORT: 5672
+      RABBIT-USERNAME: guest
+      RABBIT-PASSWORD: guest
+      DATABASE-SOURCE-ULR: jdbc:postgresql://postgres:5432/customer
+      DATABASE-USERNAME: postgres
+      DATABASE-PASSWORD: password
+    networks:
+      - my-network
+    depends_on:
+      - postgres
+      - rabbitmq
+networks:
+  my-network:
+    driver: bridge

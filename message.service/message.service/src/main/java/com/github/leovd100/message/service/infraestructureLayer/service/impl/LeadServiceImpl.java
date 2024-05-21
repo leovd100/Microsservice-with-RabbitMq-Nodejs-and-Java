@@ -7,6 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class LeadServiceImpl implements LeadService {
@@ -24,6 +25,11 @@ public class LeadServiceImpl implements LeadService {
         return lead;
     }
 
+    @Override
+    @Transactional
+    public void undoDataLead(Lead entity) {
+        leadRepository.delete(entity);
+    }
 
 
 }

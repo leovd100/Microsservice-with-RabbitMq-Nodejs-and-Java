@@ -4,22 +4,13 @@ import lombok.Data;
 
 import java.io.Serializable;
 
-@Data
-public class LeadResponseDto implements Serializable {
+public record LeadResponseDto(String name, String message) implements Serializable {
 
-    private String name;
-    private String message;
-
-    protected LeadResponseDto(String name, String message) {
-        this.name = name;
-        this.message = message;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getMessage() {
-        return message;
+    @Override
+    public String toString() {
+        return "LeadResponseDto{" +
+                "name='" + name + '\'' +
+                ", message='" + message + '\'' +
+                '}';
     }
 }
