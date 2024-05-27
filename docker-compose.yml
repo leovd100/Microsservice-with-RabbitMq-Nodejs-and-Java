@@ -12,7 +12,7 @@ services:
     image: postgres
     container_name: postgres
     environment:
-      POSTGRES_PASSWORD: password
+      POSTGRES_PASSWORD: <postgres-password>Z
     ports:
       - "5432:5432"
     volumes:
@@ -45,8 +45,8 @@ services:
       RABBIT-USERNAME: guest
       RABBIT-PASSWORD: guest
       DATABASE-SOURCE-ULR: jdbc:postgresql://postgres:5432/customer
-      DATABASE-USERNAME: postgres
-      DATABASE-PASSWORD: password
+      DATABASE-USERNAME: <database-postgres-username>
+      DATABASE-PASSWORD: <database-postgres-password>
     networks:
       - my-network
     depends_on:
