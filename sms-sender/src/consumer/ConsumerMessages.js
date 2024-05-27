@@ -11,17 +11,21 @@ async function startConsumer() {
     const queueName = process.env.QUEUE_NAME;
     await channel.assertQueue(queueName, { durable: true });
 
-    console.log("Aguardando mensagens...");
+    console.log("Waiting for messages...");
 
-    channel.consume(queueName, (msg) => {
-      if (msg !== null) {
-        console.log("Mensagem recebida:", msg.content.toString());
-        messageService.send(msg.content.toString());
-        channel.ack(msg);
-      }
-    });
+    channel
+      .consume(queueName, (msg) => {
+        if (msg !== null) {
+          console.log("Message received:", msg.content.toString());
+          messageService.send(msg.content.toString());
+          channel.ack(msg);
+        }
+      })
+      .catch((err) => {
+        console.log("Error in message consumption", err);
+      });
   } catch (error) {
-    console.error("Erro ao iniciar o consumidor:", error);
+    console.error("Error starting the consumer:", error);
   }
 }
 
