@@ -2587,3 +2587,70 @@ Examples of correct usage of @InjectMocks:
 2024-05-21T23:05:48,824 DEBUG com.github.leovd100.capture.system.applicationLayer.resource.in.LeadServiceImplTest - Running with Spring Boot v3.1.11, Spring v6.0.19
 2024-05-21T23:05:48,826 INFO  com.github.leovd100.capture.system.applicationLayer.resource.in.LeadServiceImplTest - No active profile set, falling back to 1 default profile: "default"
 2024-05-21T23:05:54,054 INFO  com.github.leovd100.capture.system.applicationLayer.resource.in.LeadServiceImplTest - Started LeadServiceImplTest in 6.276 seconds (process running for 9.455)
+2024-05-22T00:24:35,697 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-05-22T00:24:35,744 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Starting MarketingCaptureSystemApplication using Java 17.0.2 with PID 59548 (C:\marketing Capture\capture.system\capture.system\target\classes started by Leonardo Vieira in C:\marketing Capture\capture.system\capture.system)
+2024-05-22T00:24:35,753 DEBUG com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-22T00:24:35,755 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-22T00:24:37,887 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2024-05-22T00:24:37,900 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2024-05-22T00:24:37,904 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-22T00:24:37,905 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-22T00:24:38,054 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-22T00:24:38,056 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2195 ms
+2024-05-22T00:24:39,562 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2024-05-22T00:24:39,595 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2024-05-22T00:24:39,604 INFO  com.github.leovd100.capture.system.MarketingCaptureSystemApplication - Started MarketingCaptureSystemApplication in 4.859 seconds (process running for 6.121)
+2024-05-22T00:27:55,154 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-22T00:27:55,154 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-22T00:27:55,156 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-05-22T00:28:04,628 INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 361 ms
+2024-05-22T00:28:16,088 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T00:28:16,672 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Nome successfully registered!
+2024-05-22T00:35:43,860 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T00:35:43,880 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Leonardo successfully registered!
+2024-05-22T00:36:29,803 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T00:36:29,820 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User teste successfully registered!
+2024-05-22T00:44:53,632 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T00:44:53,653 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User teste2 successfully registered!
+2024-05-22T00:45:12,961 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T00:45:12,977 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Serio successfully registered!
+2024-05-22T00:49:46,401 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T00:49:46,421 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Serio successfully registered!
+2024-05-22T00:51:54,850 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T00:52:30,117 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T00:52:30,136 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Serio successfully registered!
+2024-05-22T00:53:56,249 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T00:53:56,264 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Serio successfully registered!
+2024-05-22T00:55:40,502 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T00:55:40,519 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Serio successfully registered!
+2024-05-22T00:56:25,706 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T00:56:25,721 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Serio successfully registered!
+2024-05-22T00:59:12,124 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T00:59:12,142 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Serio successfully registered!
+2024-05-22T01:15:59,330 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T01:15:59,349 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Serio successfully registered!
+2024-05-22T01:17:28,835 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T01:17:28,854 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User Serio successfully registered!
+2024-05-22T01:18:40,622 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T01:18:40,639 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User te successfully registered!
+2024-05-22T01:19:30,713 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T01:19:35,655 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T01:19:35,671 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User te successfully registered!
+2024-05-22T01:23:57,280 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T01:23:57,300 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User sdf successfully registered!
+2024-05-22T01:24:28,674 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T01:24:28,690 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User sdf successfully registered!
+2024-05-22T01:41:26,606 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T01:41:26,630 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User sdf successfully registered!
+2024-05-22T01:42:14,213 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T01:42:14,230 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User sdf successfully registered!
+2024-05-22T02:16:30,403 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T02:16:30,431 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User sdf successfully registered!
+2024-05-22T02:17:21,068 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T02:17:21,086 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User sdf successfully registered!
+2024-05-22T02:19:03,355 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T02:19:03,376 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User sdf successfully registered!
+2024-05-22T02:19:58,904 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T02:19:58,925 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User sdf successfully registered!
+2024-05-22T02:22:00,117 INFO  com.github.leovd100.capture.system.applicationLayer.controller.LeadController - Receiving information from a new customer
+2024-05-22T02:22:00,142 INFO  com.github.leovd100.capture.system.infraestructureLayer.services.impl.LeadService - User sdf successfully registered!

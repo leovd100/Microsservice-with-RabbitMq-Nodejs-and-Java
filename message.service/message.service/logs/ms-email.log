@@ -12507,3 +12507,469 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database "customer" does no
 2024-05-15T13:59:07,515 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-05-15T13:59:07,518 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-05-15T13:59:07,521 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-22T00:26:13,982 INFO  com.github.leovd100.message.service.Application - Starting Application using Java 17.0.2 with PID 11356 (C:\marketing Capture\message.service\message.service\target\classes started by Leonardo Vieira in C:\marketing Capture\message.service\message.service)
+2024-05-22T00:26:14,003 DEBUG com.github.leovd100.message.service.Application - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-22T00:26:14,005 INFO  com.github.leovd100.message.service.Application - No active profile set, falling back to 1 default profile: "default"
+2024-05-22T00:26:15,412 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-22T00:26:15,546 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 118 ms. Found 1 JPA repository interface.
+2024-05-22T00:26:16,783 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2024-05-22T00:26:16,804 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-05-22T00:26:16,809 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-22T00:26:16,810 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-22T00:26:17,017 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-22T00:26:17,021 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2916 ms
+2024-05-22T00:26:17,333 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-22T00:26:17,479 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-22T00:26:17,482 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-22T00:26:18,021 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-22T00:26:18,074 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-22T00:26:19,165 ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.Driver.makeConnection(Driver.java:443) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.Driver.connect(Driver.java:297) ~[postgresql-42.6.2.jar:42.6.2]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:437) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:279) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:193) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:69) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:231) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:199) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:169) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1383) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1454) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:378) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:354) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1815) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1764) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:596) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:518) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) [spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) [spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1168) [spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615) [spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-3.1.11.jar:3.1.11]
+	at com.github.leovd100.message.service.Application.main(Application.java:12) [classes/:?]
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258) ~[postgresql-42.6.2.jar:42.6.2]
+	... 50 more
+2024-05-22T00:26:19,177 WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:279) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:193) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:69) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:231) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:199) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:169) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1383) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1454) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:378) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:354) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1815) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1764) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:596) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:518) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) [spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) [spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1168) [spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615) [spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-3.1.11.jar:3.1.11]
+	at com.github.leovd100.message.service.Application.main(Application.java:12) [classes/:?]
+2024-05-22T00:26:19,218 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-22T00:26:20,544 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-22T00:26:20,574 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-22T00:26:21,597 ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.Driver.makeConnection(Driver.java:443) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.Driver.connect(Driver.java:297) ~[postgresql-42.6.2.jar:42.6.2]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:437) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:185) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:98) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:284) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at java.util.HashMap.forEach(HashMap.java:1421) ~[?:?]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:293) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1458) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:378) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:354) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1815) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1764) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:596) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:518) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) [spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) [spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1168) [spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) [spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615) [spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-3.1.11.jar:3.1.11]
+	at com.github.leovd100.message.service.Application.main(Application.java:12) [classes/:?]
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258) ~[postgresql-42.6.2.jar:42.6.2]
+	... 54 more
+2024-05-22T00:26:21,602 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08001
+2024-05-22T00:26:21,602 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+2024-05-22T00:26:21,611 ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+2024-05-22T00:26:21,612 WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+2024-05-22T00:26:21,614 INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-05-22T00:26:21,636 INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-22T00:26:21,679 ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1768) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:596) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:518) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1168) ~[spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:615) ~[spring-context-6.0.19.jar:6.0.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:324) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317) [spring-boot-3.1.11.jar:3.1.11]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) [spring-boot-3.1.11.jar:3.1.11]
+	at com.github.leovd100.message.service.Application.main(Application.java:12) [classes/:?]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:354) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1815) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1764) ~[spring-beans-6.0.19.jar:6.0.19]
+	... 16 more
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:98) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:56) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:185) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:98) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:284) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at java.util.HashMap.forEach(HashMap.java:1421) ~[?:?]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:293) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1458) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:378) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:354) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1815) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1764) ~[spring-beans-6.0.19.jar:6.0.19]
+	... 16 more
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:342) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.Driver.makeConnection(Driver.java:443) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.Driver.connect(Driver.java:297) ~[postgresql-42.6.2.jar:42.6.2]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:437) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:185) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:98) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:284) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at java.util.HashMap.forEach(HashMap.java:1421) ~[?:?]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:293) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1458) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:378) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:354) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1815) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1764) ~[spring-beans-6.0.19.jar:6.0.19]
+	... 16 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:243) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.Driver.makeConnection(Driver.java:443) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.Driver.connect(Driver.java:297) ~[postgresql-42.6.2.jar:42.6.2]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100) ~[HikariCP-5.0.1.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:437) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:185) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:98) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:284) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:143) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at java.util.HashMap.forEach(HashMap.java:1421) ~[?:?]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:140) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:293) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1458) ~[hibernate-core-6.2.24.Final.jar:6.2.24.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:378) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:354) ~[spring-orm-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1815) ~[spring-beans-6.0.19.jar:6.0.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1764) ~[spring-beans-6.0.19.jar:6.0.19]
+	... 16 more
+2024-05-22T00:27:22,101 INFO  com.github.leovd100.message.service.Application - Starting Application using Java 17.0.2 with PID 49936 (C:\marketing Capture\message.service\message.service\target\classes started by Leonardo Vieira in C:\marketing Capture\message.service\message.service)
+2024-05-22T00:27:22,126 DEBUG com.github.leovd100.message.service.Application - Running with Spring Boot v3.1.11, Spring v6.0.19
+2024-05-22T00:27:22,128 INFO  com.github.leovd100.message.service.Application - No active profile set, falling back to 1 default profile: "default"
+2024-05-22T00:27:23,415 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-22T00:27:23,513 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interface.
+2024-05-22T00:27:24,410 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+2024-05-22T00:27:24,421 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-05-22T00:27:24,423 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-22T00:27:24,424 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-22T00:27:24,563 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-05-22T00:27:24,565 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2345 ms
+2024-05-22T00:27:24,870 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-22T00:27:24,987 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.24.Final
+2024-05-22T00:27:24,991 INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-05-22T00:27:25,469 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-22T00:27:25,509 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-22T00:27:25,840 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15f519f7
+2024-05-22T00:27:25,842 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-22T00:27:25,970 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-22T00:27:27,383 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-22T00:27:27,668 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-22T00:27:28,912 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-22T00:27:30,874 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-05-22T00:27:30,920 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+2024-05-22T00:27:30,954 INFO  com.github.leovd100.message.service.Application - Started Application in 9.531 seconds (process running for 10.657)
+2024-05-22T00:28:16,195 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-22T00:28:16,196 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-22T00:28:16,198 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-05-22T00:28:16,456 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 1dd96f46-560a-4c8b-a9c3-8cf9d9942162
+2024-05-22T00:28:16,489 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2024-05-22T00:28:16,558 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5400db7e:0/SimpleConnection@41ad7b30 [delegate=amqp://guest@127.0.0.1:5672/, localPort=56759]
+2024-05-22T00:28:16,608 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 1dd96f46-560a-4c8b-a9c3-8cf9d9942162
+2024-05-22T00:28:16,610 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 1dd96f46-560a-4c8b-a9c3-8cf9d9942162
+2024-05-22T00:35:43,869 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! d27ecd21-47f1-48b0-9b80-2eb6979d5dbc
+2024-05-22T00:35:43,870 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq d27ecd21-47f1-48b0-9b80-2eb6979d5dbc
+2024-05-22T00:35:43,871 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq d27ecd21-47f1-48b0-9b80-2eb6979d5dbc
+2024-05-22T00:36:29,812 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! cc0aa2ec-f8e0-472c-a62c-bcdd7757662f
+2024-05-22T00:36:29,812 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq cc0aa2ec-f8e0-472c-a62c-bcdd7757662f
+2024-05-22T00:36:29,813 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq cc0aa2ec-f8e0-472c-a62c-bcdd7757662f
+2024-05-22T00:44:53,642 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 0229f3c9-7f67-43d2-9fcd-41d3d41b79a9
+2024-05-22T00:44:53,643 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 0229f3c9-7f67-43d2-9fcd-41d3d41b79a9
+2024-05-22T00:44:53,643 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 0229f3c9-7f67-43d2-9fcd-41d3d41b79a9
+2024-05-22T00:45:12,968 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! df82cdbe-e564-449b-afb1-41c096e8b73a
+2024-05-22T00:45:12,969 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq df82cdbe-e564-449b-afb1-41c096e8b73a
+2024-05-22T00:45:12,970 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq df82cdbe-e564-449b-afb1-41c096e8b73a
+2024-05-22T00:49:46,413 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 4972109e-c922-481f-8c5c-f51db8602656
+2024-05-22T00:49:46,414 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 4972109e-c922-481f-8c5c-f51db8602656
+2024-05-22T00:49:46,414 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 4972109e-c922-481f-8c5c-f51db8602656
+2024-05-22T00:51:54,859 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! d91235e0-94f7-4c86-913f-24a14d3c6ef3
+2024-05-22T00:51:54,860 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq d91235e0-94f7-4c86-913f-24a14d3c6ef3
+2024-05-22T00:51:54,860 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq d91235e0-94f7-4c86-913f-24a14d3c6ef3
+2024-05-22T00:51:54,891 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23505
+2024-05-22T00:51:54,891 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - ERROR: duplicate key value violates unique constraint "uk_a9mr8ixwq7fg1vcgei348v5dn"
+  Detalhe: Key (email)=(demetriovd@outlook.com) already exists.
+2024-05-22T00:51:54,919 FATAL com.github.leovd100.message.service.applicationLayer.controllerException.controllerAdvice.ControllerException - 409 409 CONFLICT could not execute statement [ERROR: duplicate key value violates unique constraint "uk_a9mr8ixwq7fg1vcgei348v5dn"
+  Detalhe: Key (email)=(demetriovd@outlook.com) already exists.] [insert into tb_lead (email,name,phone,id) values (?,?,?,?)]; SQL [insert into tb_lead (email,name,phone,id) values (?,?,?,?)]; constraint [uk_a9mr8ixwq7fg1vcgei348v5dn]
+2024-05-22T00:52:30,125 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! c183a225-9a5d-4d32-9676-da4351189c9f
+2024-05-22T00:52:30,126 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq c183a225-9a5d-4d32-9676-da4351189c9f
+2024-05-22T00:52:30,128 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq c183a225-9a5d-4d32-9676-da4351189c9f
+2024-05-22T00:53:56,255 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 9b838227-27dd-4d59-957a-3bf69997d90d
+2024-05-22T00:53:56,256 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 9b838227-27dd-4d59-957a-3bf69997d90d
+2024-05-22T00:53:56,257 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 9b838227-27dd-4d59-957a-3bf69997d90d
+2024-05-22T00:55:40,511 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! b2d76256-8c50-4427-9ca4-ba0da1c0fbca
+2024-05-22T00:55:40,512 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq b2d76256-8c50-4427-9ca4-ba0da1c0fbca
+2024-05-22T00:55:40,512 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq b2d76256-8c50-4427-9ca4-ba0da1c0fbca
+2024-05-22T00:56:25,713 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! b935ac97-c419-4c80-a089-38973d80bd50
+2024-05-22T00:56:25,714 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq b935ac97-c419-4c80-a089-38973d80bd50
+2024-05-22T00:56:25,714 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq b935ac97-c419-4c80-a089-38973d80bd50
+2024-05-22T00:59:12,132 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! fb466898-5d42-46ee-8994-33ea9d10a4cc
+2024-05-22T00:59:12,133 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq fb466898-5d42-46ee-8994-33ea9d10a4cc
+2024-05-22T00:59:12,134 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq fb466898-5d42-46ee-8994-33ea9d10a4cc
+2024-05-22T01:15:59,338 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 114de755-6514-44b2-8234-bcbe29649696
+2024-05-22T01:15:59,339 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 114de755-6514-44b2-8234-bcbe29649696
+2024-05-22T01:15:59,340 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 114de755-6514-44b2-8234-bcbe29649696
+2024-05-22T01:17:28,844 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 2168a2bb-6e3b-44a8-bfd9-e22ebea1ee7d
+2024-05-22T01:17:28,845 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 2168a2bb-6e3b-44a8-bfd9-e22ebea1ee7d
+2024-05-22T01:17:28,846 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 2168a2bb-6e3b-44a8-bfd9-e22ebea1ee7d
+2024-05-22T01:18:40,629 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! ba70a058-8f3b-40a0-9f7d-5824128601d6
+2024-05-22T01:18:40,630 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq ba70a058-8f3b-40a0-9f7d-5824128601d6
+2024-05-22T01:18:40,631 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq ba70a058-8f3b-40a0-9f7d-5824128601d6
+2024-05-22T01:19:30,724 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 1ddaeefa-4ebe-4c83-b03b-d364cbe45941
+2024-05-22T01:19:30,725 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 1ddaeefa-4ebe-4c83-b03b-d364cbe45941
+2024-05-22T01:19:30,725 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 1ddaeefa-4ebe-4c83-b03b-d364cbe45941
+2024-05-22T01:19:30,729 WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23505
+2024-05-22T01:19:30,729 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - ERROR: duplicate key value violates unique constraint "uk_a9mr8ixwq7fg1vcgei348v5dn"
+  Detalhe: Key (email)=(te@outlook.com) already exists.
+2024-05-22T01:19:30,732 FATAL com.github.leovd100.message.service.applicationLayer.controllerException.controllerAdvice.ControllerException - 409 409 CONFLICT could not execute statement [ERROR: duplicate key value violates unique constraint "uk_a9mr8ixwq7fg1vcgei348v5dn"
+  Detalhe: Key (email)=(te@outlook.com) already exists.] [insert into tb_lead (email,name,phone,id) values (?,?,?,?)]; SQL [insert into tb_lead (email,name,phone,id) values (?,?,?,?)]; constraint [uk_a9mr8ixwq7fg1vcgei348v5dn]
+2024-05-22T01:19:35,663 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! cc2f0b59-7007-4941-af93-882d326035e6
+2024-05-22T01:19:35,664 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq cc2f0b59-7007-4941-af93-882d326035e6
+2024-05-22T01:19:35,665 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq cc2f0b59-7007-4941-af93-882d326035e6
+2024-05-22T01:23:57,290 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! c2948f8e-47a5-4d69-922f-6ed3b398c71b
+2024-05-22T01:23:57,291 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq c2948f8e-47a5-4d69-922f-6ed3b398c71b
+2024-05-22T01:23:57,291 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq c2948f8e-47a5-4d69-922f-6ed3b398c71b
+2024-05-22T01:24:28,681 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! ac49b188-067c-4654-b35b-77f4e2267e5a
+2024-05-22T01:24:28,682 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq ac49b188-067c-4654-b35b-77f4e2267e5a
+2024-05-22T01:24:28,683 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq ac49b188-067c-4654-b35b-77f4e2267e5a
+2024-05-22T01:41:26,616 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 741a0a4e-9d1f-45a8-93fc-8df61ac0682c
+2024-05-22T01:41:26,617 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 741a0a4e-9d1f-45a8-93fc-8df61ac0682c
+2024-05-22T01:41:26,617 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 741a0a4e-9d1f-45a8-93fc-8df61ac0682c
+2024-05-22T01:42:14,221 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 8c7e12d5-7d91-44da-b3dc-5f8559a749c7
+2024-05-22T01:42:14,222 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 8c7e12d5-7d91-44da-b3dc-5f8559a749c7
+2024-05-22T01:42:14,223 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 8c7e12d5-7d91-44da-b3dc-5f8559a749c7
+2024-05-22T02:16:30,417 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 8e7a6f41-daac-4c63-a71c-4cde4c40d073
+2024-05-22T02:16:30,419 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 8e7a6f41-daac-4c63-a71c-4cde4c40d073
+2024-05-22T02:16:30,419 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 8e7a6f41-daac-4c63-a71c-4cde4c40d073
+2024-05-22T02:17:21,079 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! a0f6e8b9-d31e-4ebe-a283-d229663d033d
+2024-05-22T02:17:21,080 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq a0f6e8b9-d31e-4ebe-a283-d229663d033d
+2024-05-22T02:17:21,081 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq a0f6e8b9-d31e-4ebe-a283-d229663d033d
+2024-05-22T02:19:03,365 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! ebe7e001-3ba9-4456-8617-313f2dfb1894
+2024-05-22T02:19:03,365 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq ebe7e001-3ba9-4456-8617-313f2dfb1894
+2024-05-22T02:19:03,366 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq ebe7e001-3ba9-4456-8617-313f2dfb1894
+2024-05-22T02:19:58,913 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! b8c7eb73-b19f-4b0e-81fc-c0d580a2ae91
+2024-05-22T02:19:58,914 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq b8c7eb73-b19f-4b0e-81fc-c0d580a2ae91
+2024-05-22T02:19:58,915 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq b8c7eb73-b19f-4b0e-81fc-c0d580a2ae91
+2024-05-22T02:22:00,132 INFO  com.github.leovd100.message.service.infraestructureLayer.service.impl.LeadServiceImpl - Dados salvos com sucesso! 5692a360-353e-4f82-893b-4c0c3c4692b2
+2024-05-22T02:22:00,133 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 5692a360-353e-4f82-893b-4c0c3c4692b2
+2024-05-22T02:22:00,133 INFO  com.github.leovd100.message.service.infraestructureLayer.ProducerMessageImpl - Message sent successfully to RabbitMq 5692a360-353e-4f82-893b-4c0c3c4692b2
