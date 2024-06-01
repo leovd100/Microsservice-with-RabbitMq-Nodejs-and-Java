@@ -12,6 +12,7 @@
   "dependencies": {
     "amqplib": "^0.10.4",
     "dotenv": "^16.4.5",
-    "redis": "^4.6.14"
+    "redis": "^4.6.14",
+    "twilio": "^5.1.0"
   }
 }
