@@ -1,15 +1,8 @@
 class MessageTemplate {
-  constructor(cellPhone, message) {
+  constructor(cellPhone, message, name) {
     this.cellPhone = cellPhone;
     this.message = message;
-  }
-
-  getMessage() {
-    return this.message;
-  }
-
-  getCellPhone() {
-    return this.cellPhone;
+    this.name = name;
   }
 }
 
