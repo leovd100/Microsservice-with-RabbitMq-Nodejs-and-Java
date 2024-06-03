@@ -5,11 +5,8 @@ const send = (msg) => {
   //Converter a mensagem para object
   const consumerMessage = JSON.parse(msg);
   const message = messageCreator(consumerMessage);
-  console.log(message);
-  //serviço de envio para twillio
-  sendToRedis(message);
-
-  console.log("Sending SMS...");
+  console.log(`Sending SMS to ${message.cellPhone}...`);
+  sendSMS(message);
 };
 
 module.exports = { send };
