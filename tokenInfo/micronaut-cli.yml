@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.github.leovd100.infotoken
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [app-name, data, data-jpa, h2, hibernate-jpa, http-client-test, java, java-application, jdbc-hikari, junit, logback, maven, maven-enforcer-plugin, micronaut-aot, micronaut-http-validation, netty-server, openapi, properties, readme, serialization-jackson, shade, spring, spring-data-jpa, static-resources, swagger-ui]

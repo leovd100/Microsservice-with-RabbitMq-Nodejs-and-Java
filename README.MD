@@ -9,8 +9,13 @@ Technologies used:
 - RabbitMq
 - PostgreSQL
 - Docker
-- Microsserviços comunication (Feing)
+- Microsservices
 - Node.js
+- Express
+- Twillio
+- SMTP
+- Go lang
+- Micronaut
 
 Below we have the first idea of the project:
 
