@@ -5,13 +5,16 @@ import com.github.leovd100.infotoken.model.entity.InformationEntity;
 import com.github.leovd100.infotoken.services.TokenService;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.annotation.*;
+
 import jakarta.inject.Inject;
+import jakarta.validation.Valid;
+import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
 import java.util.UUID;
 
 import static io.micronaut.http.MediaType.APPLICATION_JSON;
-
+@Validated
 @Controller("/info")
 public class ApplicationController {
 
@@ -23,7 +26,7 @@ public class ApplicationController {
     }
 
     @Post(produces= APPLICATION_JSON)
-    public HttpResponse<InformationTokenDTO> saveToken(@Body InformationTokenDTO token){
+    public HttpResponse<InformationTokenDTO> saveToken(@Body @Valid InformationTokenDTO token){
         return HttpResponse.ok().body(tokenService.saveToken(token));
     }
 

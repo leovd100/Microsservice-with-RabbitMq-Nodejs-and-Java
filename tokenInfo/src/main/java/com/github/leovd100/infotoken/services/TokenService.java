@@ -1,5 +1,6 @@
 package com.github.leovd100.infotoken.services;
 
+import com.github.leovd100.infotoken.exceptions.TokenException;
 import com.github.leovd100.infotoken.model.dto.InformationTokenDTO;
 import com.github.leovd100.infotoken.model.entity.InformationEntity;
 import com.github.leovd100.infotoken.repository.InfoRepository;
@@ -30,7 +31,7 @@ public class TokenService {
     }
 
     public InformationEntity getToken(UUID id){
-        return repository.findById(id).orElseThrow(() -> new RuntimeException("Token not found"));
+        return repository.findById(id).orElseThrow(() -> new TokenException("Token not found"));
     }
 
     private InformationEntity toEntity(InformationTokenDTO dto){

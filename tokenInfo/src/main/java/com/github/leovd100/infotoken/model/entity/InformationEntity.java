@@ -14,7 +14,7 @@ public class InformationEntity {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @Column
+    @Column(unique = true)
     private String token;
 
     public InformationEntity() {}
