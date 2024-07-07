@@ -1,10 +1,8 @@
 package com.github.leovd100.infotoken;
 
-import io.micronaut.core.annotation.Introspected;
 import io.micronaut.runtime.Micronaut;
 import io.swagger.v3.oas.annotations.*;
 import io.swagger.v3.oas.annotations.info.*;
-import jakarta.persistence.Entity;
 
 @OpenAPIDefinition(
     info = @Info(

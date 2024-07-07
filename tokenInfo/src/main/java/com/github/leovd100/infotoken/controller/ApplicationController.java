@@ -3,19 +3,20 @@ package com.github.leovd100.infotoken.controller;
 import com.github.leovd100.infotoken.model.dto.InformationTokenDTO;
 import com.github.leovd100.infotoken.model.entity.InformationEntity;
 import com.github.leovd100.infotoken.services.TokenService;
+
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.annotation.*;
 
+import io.micronaut.http.server.cors.CrossOrigin;
 import jakarta.inject.Inject;
-import jakarta.validation.Valid;
-import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
 import java.util.UUID;
 
 import static io.micronaut.http.MediaType.APPLICATION_JSON;
-@Validated
+
 @Controller("/info")
+@CrossOrigin(allowedOrigins = "*")
 public class ApplicationController {
 
     private final TokenService tokenService;
@@ -25,9 +26,9 @@ public class ApplicationController {
         this.tokenService = tokenService;
     }
 
-    @Post(produces= APPLICATION_JSON)
-    public HttpResponse<InformationTokenDTO> saveToken(@Body @Valid InformationTokenDTO token){
-        return HttpResponse.ok().body(tokenService.saveToken(token));
+    @Post(consumes = APPLICATION_JSON, produces = APPLICATION_JSON)
+    public HttpResponse<InformationTokenDTO> saveToken(@Body InformationTokenDTO token){
+        return HttpResponse.created(tokenService.saveToken(token));
     }
 
     @Get(produces= APPLICATION_JSON)

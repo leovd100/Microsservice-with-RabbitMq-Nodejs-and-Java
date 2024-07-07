@@ -37,6 +37,12 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>io.micronaut.serde</groupId>
+      <artifactId>micronaut-serde-jackson</artifactId>
+      <version>2.10.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>io.micronaut.data</groupId>
       <artifactId>micronaut-data-hibernate-jpa</artifactId>
       <scope>compile</scope>
@@ -57,10 +63,12 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>io.micronaut.serde</groupId>
-      <artifactId>micronaut-serde-jackson</artifactId>
+      <groupId>io.micronaut.rabbitmq</groupId>
+      <artifactId>micronaut-rabbitmq</artifactId>
+      <version>4.3.0</version>
       <scope>compile</scope>
     </dependency>
+
     <dependency>
       <groupId>io.micronaut.sql</groupId>
       <artifactId>micronaut-hibernate-jpa</artifactId>
@@ -112,7 +120,11 @@
       <artifactId>junit-jupiter-api</artifactId>
       <scope>test</scope>
     </dependency>
-
+    <dependency>
+      <groupId>io.micronaut.data</groupId>
+      <artifactId>micronaut-data-jdbc</artifactId>
+      <version>${micronaut.version}</version>
+    </dependency>
 
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -126,6 +138,7 @@
         <groupId>io.micronaut.maven</groupId>
         <artifactId>micronaut-maven-plugin</artifactId>
         <configuration>
+          <shared>true</shared>
           <configFile>aot-${packaging}.properties</configFile>
         </configuration>
       </plugin>
@@ -140,7 +153,7 @@
           <!-- Uncomment to enable incremental compilation -->
           <!-- <useIncrementalCompilation>false</useIncrementalCompilation> -->
 
-          <annotationProcessorPaths combine.self="override">
+          <annotationProcessorPaths combine.self="append">
             <path>
               <groupId>io.micronaut</groupId>
               <artifactId>micronaut-inject-java</artifactId>
@@ -150,12 +163,7 @@
               <groupId>io.micronaut.data</groupId>
               <artifactId>micronaut-data-processor</artifactId>
               <version>${micronaut.data.version}</version>
-              <exclusions>
-                <exclusion>
-                  <groupId>io.micronaut</groupId>
-                  <artifactId>micronaut-inject</artifactId>
-                </exclusion>
-              </exclusions>
+
             </path>
             <path>
               <groupId>io.micronaut</groupId>
