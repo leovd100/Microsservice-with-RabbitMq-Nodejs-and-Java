@@ -1,0 +1,17 @@
+version: "3.1"
+services:
+  capture-service:
+    image: capture-service
+    container_name: capture-service
+    ports:
+      - "[PORT]:[PORT]"
+    environment:
+      SERVER_PORT: [YOUR PORT]
+      MESSAGE_SERVICE_URL: [YOUR MESSAGE PROCESSING APPLICATION URL]
+    networks:
+      - marketingcapture_my-network
+    depends_on:
+      - message-service
+networks:
+  marketingcapture_my-network:
+    external: true

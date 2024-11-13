@@ -1,53 +1,18 @@
-## Micronaut 4.5.0 Documentation
-
-- [User Guide](https://docs.micronaut.io/4.5.0/guide/index.html)
-- [API Reference](https://docs.micronaut.io/4.5.0/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/4.5.0/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
-
-- [Micronaut Maven Plugin documentation](https://micronaut-projects.github.io/micronaut-maven-plugin/latest/)
-## Feature swagger-ui documentation
-
-- [Micronaut Swagger UI documentation](https://micronaut-projects.github.io/micronaut-openapi/latest/guide/index.html)
-
-- [https://swagger.io/tools/swagger-ui/](https://swagger.io/tools/swagger-ui/)
-
-
-## Feature serialization-jackson documentation
-
-- [Micronaut Serialization Jackson Core documentation](https://micronaut-projects.github.io/micronaut-serialization/latest/guide/)
-
-
-## Feature jdbc-hikari documentation
-
-- [Micronaut Hikari JDBC Connection Pool documentation](https://micronaut-projects.github.io/micronaut-sql/latest/guide/index.html#jdbc)
-
-
-## Feature hibernate-jpa documentation
-
-- [Micronaut Hibernate JPA documentation](https://micronaut-projects.github.io/micronaut-sql/latest/guide/index.html#hibernate)
-
-
-## Feature openapi documentation
-
-- [Micronaut OpenAPI Support documentation](https://micronaut-projects.github.io/micronaut-openapi/latest/guide/index.html)
-
-- [https://www.openapis.org](https://www.openapis.org)
-
-
-## Feature spring documentation
-
-- [Micronaut Spring Framework Annotations documentation](https://micronaut-projects.github.io/micronaut-spring/latest/guide/index.html)
-
-
-## Feature micronaut-aot documentation
-
-- [Micronaut AOT documentation](https://micronaut-projects.github.io/micronaut-aot/latest/guide/)
-
-
-## Feature maven-enforcer-plugin documentation
-
-- [https://maven.apache.org/enforcer/maven-enforcer-plugin/](https://maven.apache.org/enforcer/maven-enforcer-plugin/)
-
-
+| values                         | type    | default                                               | info                                              |
+| ------------------------------ | ------- | ----------------------------------------------------- | ------------------------------------------------- |
+| DB_PASSWORD                    | string  | ---                                                   | Senha do banco de dados                           |
+| DIALECT                        | string  | H2                                                    | Dialeto do banco de dados                         |
+| JDBC_URL                       | string  | jdbc:h2:mem;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE | URL de conexão do banco de dados                  |
+| DB_USER_NAME                   | string  | sa                                                    | Nome de usuário do banco de dados                 |
+| DB_DRIVER                      | string  | org.h2.Driver                                         | Driver JDBC do banco de dados                     |
+| DDL_AUTO                       | string  | update                                                | Configuração de geração de esquema para Hibernate |
+| OPENAPI_ENABLED                | boolean | true                                                  | Ativação do OpenAPI para a aplicação              |
+| OPENAPI_CONTROLLER_ANNOTATIONS | boolean | true                                                  | Ativação das anotações de controle para o OpenAPI |
+| SERVER_PORT                    | int     | 8085                                                  | Porta do servidor Micronaut                       |
+| SNAKE_CASE                     | string  | ---                                                   | Estratégia de nomeação para propriedades Jackson  |
+| CORS_ENABLED                   | boolean | false                                                 | Ativação do CORS (opcional)                       |
+| TOKEN_RABBITMQ_EXCHANGE        | string  | ---                                                   | Nome da exchange para o token no RabbitMQ         |
+| TOKEN_RABBITMQ_ROUTINGKEY      | string  | ---                                                   | Routing key para o token no RabbitMQ              |
+| RABBITMQ_URI                   | string  | localhost:5672                                        | Endereço do cliente RabbitMQ no Micronaut         |
+| RABBITMQ_USER                  | string  | ---                                                   | Usuário do cliente RabbitMQ no Micronaut          |
+| RABBITMQ_PASSWORD              | string  | ---                                                   | Senha do cliente RabbitMQ no Micronaut            |

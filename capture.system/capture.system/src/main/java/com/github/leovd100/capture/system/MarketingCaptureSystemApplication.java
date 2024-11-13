@@ -7,11 +7,13 @@ import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.cloud.openfeign.FeignAutoConfiguration;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 
 @EnableFeignClients
 @ImportAutoConfiguration({FeignAutoConfiguration.class})
 @SpringBootApplication
+@CrossOrigin("*")
 @OpenAPIDefinition(info = @Info(title = "Customer capture system", version = "1.0", description = "This application is a BFF responsible for capturing user data and passing it on to the responsible microservices."))
 public class MarketingCaptureSystemApplication {
 	public static void main(String[] args) {
