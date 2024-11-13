@@ -1,7 +1,8 @@
 const axios = require("axios").default;
+require("dotenv").config({ path: "./config/.env" });
 
 const send = async (tokenCript) => {
-  const url = "http://localhost:8080/info";
+  const url = process.env.URL_TOKEN;
   const data = { token: tokenCript };
   return await axios
     .post(url, data)
