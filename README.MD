@@ -9,7 +9,6 @@ Technologies used:
 - RabbitMq
 - PostgreSQL
 - Docker
--
 - Microsservices
 - Node.js
 - Express
@@ -19,6 +18,8 @@ Technologies used:
 - Micronaut
 
 Below we have the first idea of the project:
+
+![img](./assets/desenho-arch01.png)
 
 <br>
 
