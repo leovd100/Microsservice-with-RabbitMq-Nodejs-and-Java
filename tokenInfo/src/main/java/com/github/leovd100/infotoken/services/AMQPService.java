@@ -5,26 +5,32 @@ import io.micronaut.rabbitmq.exception.RabbitClientException;
 import io.micronaut.serde.ObjectMapper;
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
 @Singleton
 public class AMQPService {
 
+    Logger logger = LoggerFactory.getLogger(AMQPService.class);
     private final ObjectMapper objectMapper;
-    private final AMQPSend amqpSend;
+    private final RabbitMQProducer amqpSend;
     @Inject
-    public AMQPService(ObjectMapper objectMapper, AMQPSend amqpSend) {
+    public AMQPService(ObjectMapper objectMapper, RabbitMQProducer amqpSend) {
         this.objectMapper = objectMapper;
         this.amqpSend = amqpSend;
     }
 
     public void sendMessage(InformationEntity entity) throws IOException {
         try {
+            logger.info("Enviando dados...");
             String json = objectMapper.writeValueAsString(entity);
-            amqpSend.send(json);
+            amqpSend.publishMessage(json);
+            logger.info("Enviado com sucesso!");
+
         }catch (IOException  |RabbitClientException e){
-            e.getMessage();
+            logger.error("Error: " + e.getMessage());
         }
     }
 

@@ -9,6 +9,8 @@ import io.micronaut.http.annotation.*;
 
 import io.micronaut.http.server.cors.CrossOrigin;
 import jakarta.inject.Inject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 import java.util.UUID;
@@ -21,6 +23,8 @@ public class ApplicationController {
 
     private final TokenService tokenService;
 
+    Logger logger = LoggerFactory.getLogger(ApplicationController.class);
+
     @Inject
     public ApplicationController(TokenService tokenService) {
         this.tokenService = tokenService;
@@ -28,17 +32,9 @@ public class ApplicationController {
 
     @Post(consumes = APPLICATION_JSON, produces = APPLICATION_JSON)
     public HttpResponse<InformationTokenDTO> saveToken(@Body InformationTokenDTO token){
+        logger.info("Iniciando processamento de token");
         return HttpResponse.created(tokenService.saveToken(token));
     }
 
-    @Get(produces= APPLICATION_JSON)
-    public HttpResponse<List<InformationEntity>> getAllTokens(){
-        return HttpResponse.ok().body(tokenService.getAllTokens());
-    }
-
-    @Get(uri="/find", produces= APPLICATION_JSON)
-    public HttpResponse<InformationEntity> getTokenById(@QueryValue UUID id){
-        return HttpResponse.ok().body(tokenService.getToken(id));
-    }
 
 }

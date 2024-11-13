@@ -42,21 +42,13 @@
       <version>2.10.1</version>
       <scope>compile</scope>
     </dependency>
-    <dependency>
-      <groupId>io.micronaut.data</groupId>
-      <artifactId>micronaut-data-hibernate-jpa</artifactId>
-      <scope>compile</scope>
-    </dependency>
+
     <dependency>
       <groupId>io.micronaut.data</groupId>
       <artifactId>micronaut-data-spring</artifactId>
       <scope>compile</scope>
     </dependency>
-    <dependency>
-      <groupId>io.micronaut.data</groupId>
-      <artifactId>micronaut-data-spring-jpa</artifactId>
-      <scope>compile</scope>
-    </dependency>
+
     <dependency>
       <groupId>io.micronaut.data</groupId>
       <artifactId>micronaut-data-tx-hibernate</artifactId>
@@ -92,11 +84,6 @@
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.h2database</groupId>
-      <artifactId>h2</artifactId>
       <scope>runtime</scope>
     </dependency>
 
