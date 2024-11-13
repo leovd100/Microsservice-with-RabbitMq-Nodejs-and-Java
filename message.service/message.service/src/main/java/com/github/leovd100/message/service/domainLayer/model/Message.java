@@ -17,10 +17,13 @@ public class Message {
     private String contactValue;
     private String name;
 
-    public Message(Lead lead, TypeMessage typeMessage){
+    private String link;
+
+    public Message(Lead lead, TypeMessage typeMessage, String link){
         this.id = lead.getId();
         this.typeMessage  = typeMessage;
         this.name = lead.getName();
+        this.link = link;
         setContactValueByTypeMessage(lead);
     }
 
@@ -31,5 +34,6 @@ public class Message {
             this.contactValue = lead.getEmail();
         }
     }
+
 
 }

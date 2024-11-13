@@ -17,6 +17,7 @@ import java.net.URI;
 
 @RestController
 @RequestMapping("/event-lead")
+@CrossOrigin("*")
 public class LeadController {
 
     Logger logger = LogManager.getLogger(LeadController.class);

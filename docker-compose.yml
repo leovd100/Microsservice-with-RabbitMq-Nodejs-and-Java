@@ -1,57 +1,179 @@
 version: "3.1"
 services:
+  capture-service:
+    image: capture-service
+    container_name: capture-service
+    ports:
+      - "8080:8080"
+    environment:
+      SERVER_PORT: "8080"
+      MESSAGE_SERVICE_URL: "http://message-service:8080"
+    networks:
+      - marketingcapture_my-network
+    depends_on:
+      - message-service
+
+  message-service:
+    image: message-service
+    container_name: message-service
+    ports:
+      - "8081:8081"
+    environment:
+      SERVER_PORT: "8081"
+      RABBIT_HOST: "rabbitmq"
+      RABBIT_PORT: "5672"
+      RABBIT_USERNAME: "your_rabbitmq_user"
+      RABBIT_PASSWORD: "your_rabbitmq_password"
+      DATABASE_SOURCE_URL: "jdbc:postgresql://postgres:5432/your_db"
+      DATABASE_USERNAME: "your_postgres_user"
+      DATABASE_PASSWORD: "your_postgres_password"
+    networks:
+      - marketingcapture_my-network
+
+  bff_target_user:
+    image: bff_target_user
+    container_name: bff_target_user
+    ports:
+      - "8082:8082"
+    environment:
+      URL_TOKEN: "http://token_convert_processor:8083"
+    networks:
+      - marketingcapture_my-network
+    depends_on:
+      - token_convert_processor
+
+  token_convert_processor:
+    image: token_convert_processor
+    container_name: token_convert_processor
+    ports:
+      - "8083:8083"
+    environment:
+      SERVER_PORT: "8083"
+      OPENAPI_CONTROLLER_ANNOTATIONS: "true"
+      OPENAPI_ENABLED: "true"
+      TOKEN_RABBITMQ_EXCHANGE: "exchange"
+      TOKEN_RABBITMQ_ROUTINGKEY: "routing_key"
+      RABBIT_HOST: "rabbitmq"
+      RABBIT_PORT: "5672"
+      RABBITMQ_USER: "your_rabbitmq_user"
+      RABBITMQ_PASSWORD: "your_rabbitmq_password"
+      RABBITMQ_URI: "amqp://your_rabbitmq_user:your_rabbitmq_password@rabbitmq:5672"
+    networks:
+      - marketingcapture_my-network
+
+  finger_print_processor:
+    image: finger_print_processor
+    container_name: finger_print_processor
+    ports:
+      - "8084:8084"
+    environment:
+      mongo_database: "mongo_db"
+      mongo_collection: "collection"
+      mongo_user: "user_mongo"
+      mongo_password: "password_mongo"
+      mongo_host: "mongo_host:27017"
+      postgres_dbname: "your_db"
+      postgres_user: "your_postgres_user"
+      postgres_password: "your_postgres_password"
+      postgres_host: "postgres"
+      postgres_port: "5432"
+      rabbitmq_host: "rabbitmq"
+      rabbitmq_port: "5672"
+      rabbitmq_virtual_host: "/"
+      rabbitmq_queue: "queue_name"
+      user_rabbit: "your_rabbitmq_user"
+      password_rabbit: "your_rabbitmq_password"
+    networks:
+      - marketingcapture_my-network
+
+  email_service:
+    image: email_service
+    container_name: email_service
+    environment:
+      RABBITMQ_HOST: "rabbitmq"
+      RABBITMQ_PORT: "5672"
+      QUEUE_NAME: "queue_name"
+      USER_RABBIT: "your_rabbitmq_user"
+      PASSWORD_RABBIT: "your_rabbitmq_password"
+      USER_EMAIL: "admin_email@example.com"
+      PASSWORD_EMAIL: "email_password"
+      HOST_EMAIL_SMTP: "smtp.example.com"
+      PORT_SMTP: "587"
+    networks:
+      - marketingcapture_my-network
+
+  sms_service:
+    image: sms_service
+    container_name: sms_service
+    environment:
+      RABBITMQ_HOST: "rabbitmq"
+      RABBITMQ_PORT: "5672"
+      QUEUE_NAME: "queue_name"
+      USER: "your_rabbitmq_user"
+      PASSWORD: "your_rabbitmq_password"
+      TWILIO_ACCOUNT_SID: "your_twilio_account_sid"
+      TWILIO_AUTH_TOKEN: "your_twilio_auth_token"
+      TWILIO_PHONE_NUMBER: "twilio_phone"
+    networks:
+      - marketingcapture_my-network
+
   rabbitmq:
     image: rabbitmq:3.12.14-management
     container_name: rabbitmq
     ports:
       - "5672:5672"
       - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: "your_rabbitmq_user"
+      RABBITMQ_DEFAULT_PASS: "your_rabbitmq_password"
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+      - rabbitmq-log:/var/log/rabbitmq
     networks:
-      - my-network
+      - marketingcapture_my-network
+
   postgres:
     image: postgres
     container_name: postgres
     environment:
-      POSTGRES_PASSWORD: password
+      POSTGRES_USER: "your_postgres_user"
+      POSTGRES_DB: "your_postgres_database"
+      POSTGRES_PASSWORD: "your_postgres_password"
     ports:
       - "5432:5432"
     volumes:
-      - /temp/
+      - postgres-data:/var/lib/postgresql/data
     networks:
-      - my-network
+      - marketingcapture_my-network
 
-  capture-service:
-    image: capture-service
-    container_name: capture-service
+  redis-cache:
+    image: redis
+    container_name: redis-cache
     ports:
-      - "8082:8082"
+      - "6379:6379"
     environment:
-      SERVER_PORT: 8082
-      MESSAGE_SERVICE_URL: http://message-processor:8083
+      REDIS_PASSWORD: "your_redis_password"
+    command: ["redis-server", "--requirepass", "your_redis_password"]
     networks:
-      - my-network
-    depends_on:
-      - message-processor
+      - marketingcapture_my-network
+  mongodb:
+    image: mongo
+    container_name: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "Your mongo user"
+      MONGO_INITDB_ROOT_PASSWORD: "Your mongo password"
+    volumes:
+      - /root/docker:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - marketingcapture_my-network
 
-  message-processor:
-    image: message-processor
-    container_name: message-processor
-    ports:
-      - "8083:8083"
-    environment:
-      SERVER_PORT: 8083
-      RABBIT-HOST: rabbitmq
-      RABBIT-PORT: 5672
-      RABBIT-USERNAME: guest
-      RABBIT-PASSWORD: guest
-      DATABASE-SOURCE-ULR: jdbc:postgresql://postgres:5432/customer
-      DATABASE-USERNAME: postgres
-      DATABASE-PASSWORD: password
-    networks:
-      - my-network
-    depends_on:
-      - postgres
-      - rabbitmq
+volumes:
+  rabbitmq-data:
+  rabbitmq-log:
+  postgres-data:
+
 networks:
-  my-network:
+  marketingcapture_my-network:
     driver: bridge
